@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title align="center">HelpDys</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-header">
+    <ion-avatar class="avatar" >
+      <img src="/assets/imagen/profesor.jpeg">
+    </ion-avatar>
+  </div>
+  <div padding class="about-info">
+    <h4 align="center">Hola Bienvenido a HelpDys</h4>
+    <h5>Nombre: {{username}}</h5>
+    <h5>Apellido: {{username}}</h5>
+    <h5>Email: {{username}}</h5>
+  </div>
+  <div padding class="about-info">
+    <p>HelpDys Profesores es una aplicación que permite a cada uno de los usuarios en este caso profesores, crear una lista de actividades, dar de alta a nuevos estudiantes, observar reportes de los estudiantes</p>
+  </div>
+</ion-content>

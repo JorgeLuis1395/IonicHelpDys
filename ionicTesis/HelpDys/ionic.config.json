@@ -1,0 +1,7 @@
+{
+  "name": "HelpDys",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
