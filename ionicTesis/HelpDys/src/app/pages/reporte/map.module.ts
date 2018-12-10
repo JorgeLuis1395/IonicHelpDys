@@ -4,12 +4,14 @@ import { IonicModule } from '@ionic/angular';
 
 import { MapPage } from './map';
 import { MapPageRoutingModule } from './map-routing.module';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   imports: [
     CommonModule,
     IonicModule,
-    MapPageRoutingModule
+    MapPageRoutingModule,
+      HttpClientModule
   ],
   declarations: [
     MapPage,

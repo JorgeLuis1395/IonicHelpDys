@@ -5,23 +5,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroProfesorPage } from './registro-profesor.page';
+import { Servicios1Page } from './servicios1.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: RegistroProfesorPage
+    component: Servicios1Page
   }
 ];
 
 @NgModule({
   imports: [
-
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RegistroProfesorPage]
+  declarations: [Servicios1Page]
 })
-export class RegistroProfesorPageModule {}
+export class Servicios1PageModule {}

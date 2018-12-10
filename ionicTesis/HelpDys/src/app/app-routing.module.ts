@@ -34,6 +34,7 @@ const routes: Routes = [
     path: 'tutorial',
     loadChildren: './pages/tutorial/tutorial.module#TutorialModule'
   },
+  { path: 'servicios1', loadChildren: './pages/servicios1/servicios1.module#Servicios1PageModule' },
 
 ];
 

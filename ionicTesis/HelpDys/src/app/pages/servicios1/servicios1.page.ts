@@ -1,21 +1,13 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
-
-import { ConferenceData } from '../../providers/conference-data';
-
-import { Platform } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
 import {EstudiantesProvider} from "../../providers/estudiantes";
 
-
-declare var google: any;
-
-
 @Component({
-  selector: 'page-map',
-  templateUrl: 'map.html',
-  styleUrls: ['./map.scss'],
-  encapsulation: ViewEncapsulation.None
+  selector: 'app-servicios1',
+  templateUrl: './servicios1.page.html',
+  styleUrls: ['./servicios1.page.scss'],
 })
-export class MapPage {
+export class Servicios1Page implements OnInit {
+
     constructor(public estudianteProvider: EstudiantesProvider ) {
         this.getUsers();
     }

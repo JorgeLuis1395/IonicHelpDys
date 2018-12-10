@@ -1,27 +1,39 @@
-import {Component, ViewChild, ViewEncapsulation} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConferenceData } from '../../providers/conference-data';
-import {List} from "@ionic/angular";
 
 
 @Component({
-  selector: 'page-speaker-detail',
-  templateUrl: 'speaker-detail.html',
-  styleUrls: ['./speaker-detail.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'page-speaker-detail',
+    templateUrl: 'speaker-detail.html',
+    styleUrls: ['./speaker-detail.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class SpeakerDetailPage {
-  speaker: any;
-    queryText = '';
-    @ViewChild('estudianteList') estudianteList: List;
-  constructor(
-    private dataProvider: ConferenceData,
-    private router: Router,
-    private route: ActivatedRoute
-  ) {}
+    speaker: any;
 
+    constructor(
+        private dataProvider: ConferenceData,
+        private router: Router,
+        private route: ActivatedRoute
+    ) {}
 
-  goToSessionDetail(session: any) {
-    this.router.navigateByUrl(`app/tabs/(schedule:session/${session.id})`);
-  }
+    ionViewWillEnter() {
+        this.dataProvider.load().subscribe((data: any) => {
+            const speakerId = this.route.snapshot.paramMap.get('speakerId');
+            if (data && data.speakers) {
+                for (const speaker of data.speakers) {
+                    if (speaker && speaker.id === speakerId) {
+                        this.speaker = speaker;
+                        break;
+                    }
+                }
+            }
+        });
+
+    }
+
+    goToSessionDetail(session: any) {
+        this.router.navigateByUrl(`app/tabs/(schedule:session/${session.id})`);
+    }
 }
