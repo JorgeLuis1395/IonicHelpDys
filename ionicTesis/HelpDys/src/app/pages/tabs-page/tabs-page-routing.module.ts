@@ -7,6 +7,8 @@ import { SessionDetailPage } from '../session-detalles/session-detail';
 import { SpeakerDetailPage } from '../estudiantes/speaker-detail';
 import { SpeakerListPage } from '../estudiantes-lista/speaker-list';
 import {AboutPage} from '../informacion/about';
+import {NewEventPage} from "../new-event/new-event.page";
+import {RegistroEstudiantePage} from "../registro-estudiante/registro-estudiante.page";
 
 
 const routes: Routes = [
@@ -25,6 +27,11 @@ const routes: Routes = [
         component: SchedulePage,
         outlet: 'schedule'
       },
+        {
+            path: 'new',
+            component: NewEventPage,
+            outlet: 'schedule'
+        },
       {
         path: 'session/:sessionId',
         component: SessionDetailPage,
@@ -36,6 +43,11 @@ const routes: Routes = [
         component: SpeakerListPage,
         outlet: 'speakers'
       },
+        {
+            path: 'estudiante',
+            component: RegistroEstudiantePage,
+            outlet: 'speakers'
+        },
       {
         path: 'session/:sessionId',
         component: SessionDetailPage,

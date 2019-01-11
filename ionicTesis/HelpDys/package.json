@@ -47,6 +47,7 @@
     "cordova-plugin-x-toast": "2.7.2",
     "core-js": "^2.5.4",
     "intl": "^1.2.5",
+    "ionic-select-searchable": "^2.10.0",
     "ionic2-calendar": "^0.4.6",
     "moment": "^2.22.2",
     "rxjs": "^6.3.3",

@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConferenceData } from '../../providers/conference-data';
+import {EstudiantesProvider} from "../../providers/estudiantes";
 
 
 @Component({
@@ -10,13 +11,14 @@ import { ConferenceData } from '../../providers/conference-data';
     encapsulation: ViewEncapsulation.None
 })
 export class SpeakerDetailPage {
-    speaker: any;
-
+    estudiantes: any;
+    speaker:any;
     constructor(
         private dataProvider: ConferenceData,
         private router: Router,
-        private route: ActivatedRoute
-    ) {}
+        private route: ActivatedRoute,
+        public estudianteProvider: EstudiantesProvider,
+    ) {this.getEstudiante()}
 
     ionViewWillEnter() {
         this.dataProvider.load().subscribe((data: any) => {
@@ -36,4 +38,12 @@ export class SpeakerDetailPage {
     goToSessionDetail(session: any) {
         this.router.navigateByUrl(`app/tabs/(schedule:session/${session.id})`);
     }
+    getEstudiante() {
+        this.estudianteProvider.getEstudiantes()
+            .then(data => {
+                this.estudiantes = data;
+                console.log(this.estudiantes);
+            });
+    }
+
 }

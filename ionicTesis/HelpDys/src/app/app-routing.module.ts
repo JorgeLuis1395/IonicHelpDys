@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 const routes: Routes = [
   {
     path: '',
@@ -35,6 +34,9 @@ const routes: Routes = [
     loadChildren: './pages/tutorial/tutorial.module#TutorialModule'
   },
   { path: 'servicios1', loadChildren: './pages/servicios1/servicios1.module#Servicios1PageModule' },
+
+  { path: 'est', loadChildren: './pages/tabs-estudiante/tabs-estudiante.module#TabsEstudiantePageModule' },
+
 
 ];
 

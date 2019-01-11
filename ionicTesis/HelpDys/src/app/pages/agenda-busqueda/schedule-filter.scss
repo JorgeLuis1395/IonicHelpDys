@@ -5,7 +5,7 @@ page-schedule-filter {
     color: var(--ion-color-danger);
   }
 
-  @each $track, $value in map-remove($categories) {
+  @each $track, $value in map-remove($etiqueta) {
     ion-item[track=#{$track}] .dot {
       display: inline-block;
 

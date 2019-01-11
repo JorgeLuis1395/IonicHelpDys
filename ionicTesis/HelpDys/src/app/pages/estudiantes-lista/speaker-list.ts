@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
 
 import { ConferenceData } from '../../providers/conference-data';
+import {EstudiantesProvider} from "../../providers/estudiantes";
+import {DateFormatter} from "@angular/common/src/pipes/deprecated/intl";
 
 @Component({
     selector: 'page-speaker-list',
@@ -12,12 +14,13 @@ import { ConferenceData } from '../../providers/conference-data';
 })
 export class SpeakerListPage {
     speakers: any[] = [];
-
+    estudiantes: any;
     constructor(
         public actionSheetCtrl: ActionSheetController,
         public confData: ConferenceData,
-        public router: Router
-    ) {}
+        public router: Router,
+        public estudianteProvider: EstudiantesProvider,
+    ) {this.getEstudiante()}
 
     ionViewDidEnter() {
         this.confData.getSpeakers().subscribe((speakers: any[]) => {
@@ -31,7 +34,7 @@ export class SpeakerListPage {
 
     async openSpeakerShare(speaker: any) {
         const actionSheet = await this.actionSheetCtrl.create({
-            header: 'Share ' + speaker.name,
+            header: ' ' + speaker.name,
             buttons: [
                 {
                     text: 'Copy Link',
@@ -62,29 +65,40 @@ export class SpeakerListPage {
         await actionSheet.present();
     }
 
-    async openContact(speaker: any) {
+    async openContact(estudiantes: any) {
         const mode = 'ios'; // this.config.get('mode');
 
         const actionSheet = await this.actionSheetCtrl.create({
-            header: 'Contact ' + speaker.name,
+
+            header: 'Contacto ' + estudiantes.nombre,
             buttons: [
                 {
-                    text: `Email ( ${speaker.email} )`,
+                    text: `Email ( ${estudiantes.email_representante} )`,
                     icon: mode !== 'ios' ? 'mail' : null,
                     handler: () => {
-                        window.open('mailto:' + speaker.email);
+                        window.open('mailto:' + estudiantes.email_representante);
                     }
                 },
                 {
-                    text: `Call ( ${speaker.phone} )`,
+                    text: `Telefono ( ${estudiantes.telefono_representante} )`,
                     icon: mode !== 'ios' ? 'call' : null,
                     handler: () => {
-                        window.open('tel:' + speaker.phone);
+                        window.open('tel:' + estudiantes.telefono_representante);
                     }
                 }
             ]
         });
 
         await actionSheet.present();
+    }
+    getEstudiante() {
+        this.estudianteProvider.getEstudiantes()
+            .then(data => {
+                this.estudiantes = data;
+                console.log(this.estudiantes);
+            });
+    }
+    async openNewEvent() {
+        this.router.navigateByUrl('/app/tabs/(speakers:estudiante)');
     }
 }

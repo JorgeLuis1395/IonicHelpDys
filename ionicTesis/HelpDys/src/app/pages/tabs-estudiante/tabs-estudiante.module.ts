@@ -1,0 +1,31 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+
+import { IonicModule } from '@ionic/angular';
+
+import { TabsEstudiantePage } from './tabs-estudiante.page';
+import {SpeakerListModule} from "../estudiantes-lista/speaker-list.module";
+import {MapModule} from "../reporte/map.module";
+import {ScheduleModule} from "../agenda/schedule.module";
+import {SessionDetailModule} from "../session-detalles/session-detail.module";
+import {SpeakerDetailModule} from "../estudiantes/speaker-detail.module";
+import {TabsPageRoutingEstModule} from "./tabs-page-routing-est.module";
+import {InfoEstudiantePageModule} from "../info-estudiante/info-estudiante.module";
+
+@NgModule({
+  imports: [
+      InfoEstudiantePageModule,
+      CommonModule,
+      IonicModule,
+      MapModule,
+      ScheduleModule,
+      SessionDetailModule,
+      SpeakerDetailModule,
+      SpeakerListModule,
+      TabsPageRoutingEstModule,
+  ],
+  declarations: [TabsEstudiantePage]
+})
+export class TabsEstudiantePageModule {}

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva Actividad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+    <ion-infinite-scroll>
+      <div padding>
+        <div class="row header">
+          <div class="col"><div class = "col header text-center">
+            <img src="/assets/imagen/calendar.png" height="50" width="50" class = "logo" /></div>
+          </div>
+        </div>
+        <ion-item>
+          <ion-icon name="calendar"></ion-icon>
+          <ion-input placeholder="Fecha Actividad"></ion-input>
+          <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fecha"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="planet"></ion-icon>
+          <ion-input type="text" [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" item-left></ion-icon>
+          <ion-input type="text" [(ngModel)]="ubicacion" placeholder="Ubicación"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Categoria</ion-label>
+          <ion-select [(ngModel)]="etiqueta" class="select()">
+            <ion-select-option value="comida">Comida</ion-select-option>
+            <ion-select-option value="reuniones">Reuniones</ion-select-option>
+            <ion-select-option value="tarea">Revision de Tareas</ion-select-option>
+            <ion-select-option value="actividades">Actividades</ion-select-option>
+            <ion-select-option value="viajes">Viajes</ion-select-option>
+            <ion-select-option value="tutorias">Tutorias</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="clock"></ion-icon>
+          <ion-input placeholder="Hora de Inicio"></ion-input>
+          <ion-datetime displayFormat="HH:mm" [(ngModel)]="hora_inicio"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="time"></ion-icon>
+          <ion-input placeholder="Hora de Fin"></ion-input>
+          <ion-datetime displayFormat="HH:mm" [(ngModel)]="hora_fin"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="text" item-left></ion-icon>
+          <ion-input type="text" [(ngModel)]="descripcion" placeholder="Descripcion"></ion-input>
+        </ion-item>
+        <div padding>
+          <ion-button color="secondary" size="large"  type="submit" expand="block"  (click)="saveEvent()" >Guardar</ion-button>
+        </div>
+      </div>
+    </ion-infinite-scroll>
+  </ion-content>

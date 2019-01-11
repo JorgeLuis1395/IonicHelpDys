@@ -1,14 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button text="Speakers"></ion-back-button>
+      <ion-back-button text="Estudiantes"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{speaker?.name}}</ion-title>
+    <ion-title>{{estudiantes?.nombre}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="speaker-detail">
-  <div text-center *ngIf="speaker">
+  <div text-center *ngIf="estudiantes">
     <br>
 
     <ion-button fill="clear" size="small" color="twitter">
@@ -22,5 +22,5 @@
     </ion-button>
   </div>
 
-  <p>{{speaker?.about}}</p>
+  <p>{{estudiantes?.apellido}}</p>
 </ion-content>

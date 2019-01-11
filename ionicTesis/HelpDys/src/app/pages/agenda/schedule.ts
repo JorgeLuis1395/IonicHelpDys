@@ -5,7 +5,9 @@ import { AlertController, List, LoadingController, ModalController, ToastControl
 import { ScheduleFilterPage } from '../agenda-busqueda/schedule-filter';
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
-
+import {EstudiantesProvider} from "../../providers/estudiantes";
+import {HttpClient} from "@angular/common/http";
+import 'rxjs/Rx';
 @Component({
   selector: 'page-schedule',
   templateUrl: 'schedule.html',
@@ -13,27 +15,27 @@ import { UserData } from '../../providers/user-data';
   encapsulation: ViewEncapsulation.None
 })
 export class SchedulePage {
-  // Gets a reference to the list element
-  @ViewChild('scheduleList') scheduleList: List;
-
-  dayIndex = 0;
-  queryText = '';
-  segment = 'all';
-  excludeTracks: any = [];
-  shownSessions: any = [];
-  groups: any = [];
-  confDate: string;
+    agenda: any;
+    @ViewChild('scheduleList') scheduleList: List;
+    dayIndex = 0;
+    queryText = '';
+    segment = 'all';
+    excludeTracks: any = [];
+    shownSessions: any = [];
+    groups: any = [];
+    confDate: string;
 
   constructor(
+      public estudianteProvider: EstudiantesProvider,
+      private toastCtrl: ToastController,
+      public router: Router,
     public alertCtrl: AlertController,
     public confData: ConferenceData,
     public loadingCtrl: LoadingController,
     public modalCtrl: ModalController,
-    public router: Router,
-    public toastCtrl: ToastController,
-    public user: UserData
-  ) { }
-
+    public user: UserData,
+      public http: HttpClient
+  ) {  this.getAgenda(); }
   ionViewWillEnter() {
     // this.app.setTitle('Schedule');
     this.updateSchedule();
@@ -65,11 +67,15 @@ export class SchedulePage {
     }
   }
 
-  goToSessionDetail(sessionData: any) {
-    // go to the session detail page
-    // and pass in the session data
-    this.router.navigateByUrl(`app/tabs/(schedule:session/${sessionData.id})`);
+  goToSessionDetail(sessionData) {
+     this.estudianteProvider.goToSessionDetail(sessionData)
+          .then(data => {
+              this.agenda = data;
+              console.log(this.agenda);
+          });
+
   }
+
 
   async addFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any) {
     if (this.user.hasFavorite(sessionData.name)) {
@@ -137,23 +143,14 @@ export class SchedulePage {
     fab.close();
   }
 
-  /*doRefresh(refresher: Refresher) {
-    this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
-      this.shownSessions = data.shownSessions;
-      this.groups = data.groups;
-
-      // simulate a network request that would take longer
-      // than just pulling from out local json file
-      setTimeout(() => {
-        refresher.complete();
-
-        const toast = this.toastCtrl.create({
-          message: 'Sessions have been updated.',
-          duration: 3000
-        });
-        toast.present();
-      }, 1000);
-    });
-  }
-  */
+    getAgenda() {
+        this.estudianteProvider.getAgenda()
+            .then(data => {
+                this.agenda = data;
+                console.log(this.agenda);
+            });
+    }
+    async openNewEvent() {
+        this.router.navigateByUrl('/app/tabs/(schedule:new)');
+    }
 }

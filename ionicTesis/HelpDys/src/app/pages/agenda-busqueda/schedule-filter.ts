@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 import { ConferenceData } from '../../providers/conference-data';
+import {EstudiantesProvider} from "../../providers/estudiantes";
 
 
 @Component({
@@ -13,12 +14,19 @@ import { ConferenceData } from '../../providers/conference-data';
 export class ScheduleFilterPage implements AfterViewInit {
 
   tracks: {name: string, isChecked: boolean}[] = [];
-
+  agenda: any;
   constructor(
     public confData: ConferenceData,
-    public modalCtrl: ModalController
+    public modalCtrl: ModalController,
+    public estudianteProvider: EstudiantesProvider,
   ) { }
-
+    getAgenda() {
+        this.estudianteProvider.getAgenda()
+            .then(data => {
+                this.agenda = data;
+                console.log(this.agenda);
+            });
+    }
   // TODO use the ionViewDidEnter event
   ngAfterViewInit() {
     // passed in array of track names that should be excluded (unchecked)

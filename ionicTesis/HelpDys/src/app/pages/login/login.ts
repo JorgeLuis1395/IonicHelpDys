@@ -16,12 +16,13 @@ import {MenuController} from '@ionic/angular';
 export class LoginPage {
   login: UserOptions = { username: '', password: '' };
   submitted = false;
+  perfil: string;
 
   constructor(
     public menu: MenuController,
     public userData: UserData,
     public router: Router
-  ) { }
+  ) { this.perfil = 'p';}
 
   /*onLogin(form: NgForm) {
     this.submitted = true;
@@ -31,8 +32,16 @@ export class LoginPage {
       this.router.navigateByUrl('/app/tabs/(agenda:agenda)');
     }
   }*/
+ select(){
+   console.log(this.perfil)
+ }
   onLogin() {
-    this.router.navigateByUrl('app/tabs/(about:about)');
+      if(this.perfil == 'e'){
+          this.router.navigateByUrl('est/tabs/(inicio:inicio)');
+      }
+      if(this.perfil == 'p'){
+        this.router.navigateByUrl('app/tabs/(about:about)');
+      }
   }
   onSignup() {
     this.router.navigateByUrl('/signup');

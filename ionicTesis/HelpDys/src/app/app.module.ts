@@ -13,6 +13,7 @@ import {EstudiantesProvider} from "./providers/estudiantes";
 import {FormsModule} from "@angular/forms";
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
+
 @NgModule({
   imports: [
     BrowserModule,

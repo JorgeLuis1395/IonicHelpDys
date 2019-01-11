@@ -8,48 +8,46 @@
       <ion-segment-button value="Todas">
        Eventos
       </ion-segment-button>
-      <ion-segment-button value="favorites">
-        Favoritos
-      </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
+
 
   <ion-toolbar>
     <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Buscar"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
-  <ion-list #scheduleList [hidden]="shownSessions === 0">
-    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
+  <ion-list >
+    <ion-item-group *ngFor="let agenda1 of agenda">
       <ion-item-divider sticky>
         <ion-label>
-          {{group.time}}
+          {{agenda1.fecha}}
         </ion-label>
       </ion-item-divider>
 
-      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
-        <ion-item button href="app/tabs/(schedule:session/{{session.id}}">
+      <ion-item-sliding [attr.track]="agenda1.etiqueta | lowercase" >
+        <ion-item button href="app/tabs/(schedule:session/{{agenda1.id}}">
           <ion-label>
-            <h3>{{session.name}}</h3>
+            <h3>{{agenda1.nombre}}</h3>
             <p>
-              {{session.timeStart}} &mdash; {{session.timeEnd}}: {{session.location}}
+              {{agenda1.hora_inicio}} &mdash; {{agenda1.hora_fin}}: {{agenda1.ubicacion}}
             </p>
           </ion-label>
         </ion-item>
         <ion-item-options>
-          <ion-item-option color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
+          <ion-item-option color="favorite" (click)="addFavorite(slidingItem, agenda1)" *ngIf="segment === 'all'">
             Favoritos
           </ion-item-option>
-          <ion-item-option color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
+          <ion-item-option color="danger" (click)="removeFavorite(slidingItem, agenda1, 'Remove Favorite')" *ngIf="segment === 'favorites'">
             Eliminar
           </ion-item-option>
         </ion-item-options>
       </ion-item-sliding>
     </ion-item-group>
   </ion-list>
-
-  <ion-list-header [hidden]="shownSessions > 0">
-    Sesion no iniciada
-  </ion-list-header>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" #fab>
+        <ion-fab-button color="blue" (click)="openNewEvent()"><ion-icon name="add"></ion-icon></ion-fab-button>
+    </ion-fab>
 
 </ion-content>

@@ -15,22 +15,18 @@ import {SplashScreen} from "@ionic-native/splash-screen/ngx";
 export class AppComponent implements OnInit {
   appPages = [
     {
-      title: 'Schedule',
-      url: '/app/tabs/(agenda:agenda)',
+      title: 'Calendario',
+      url: '/app/tabs/(schedule:schedule)',
       icon: 'calendar'
     },
     {
-      title: 'Speakers',
+      title: 'Estudiantes',
       url: '/app/tabs/(speakers:speakers)',
       icon: 'contacts'
     },
+
     {
-      title: 'Map',
-      url: '/app/tabs/(reporte:reporte)',
-      icon: 'map'
-    },
-    {
-      title: 'About',
+      title: 'Home',
       url: '/app/tabs/(informacion:informacion)',
       icon: 'information-circle'
     }

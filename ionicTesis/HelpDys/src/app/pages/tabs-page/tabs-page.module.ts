@@ -11,6 +11,8 @@ import { ScheduleModule } from '../agenda/schedule.module';
 import { SessionDetailModule } from '../session-detalles/session-detail.module';
 import { SpeakerDetailModule } from '../estudiantes/speaker-detail.module';
 import { SpeakerListModule } from '../estudiantes-lista/speaker-list.module';
+import {HttpClientModule} from "@angular/common/http";
+import {RegistroEstudiantePageModule} from "../registro-estudiante/registro-estudiante.module";
 
 @NgModule({
   imports: [
@@ -22,7 +24,8 @@ import { SpeakerListModule } from '../estudiantes-lista/speaker-list.module';
     SessionDetailModule,
     SpeakerDetailModule,
     SpeakerListModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+      RegistroEstudiantePageModule,
   ],
   declarations: [
     TabsPage,

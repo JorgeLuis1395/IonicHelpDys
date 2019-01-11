@@ -1,0 +1,44 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="about" href="/est/tabs/(inicio:inicio)">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="schedule" href="/est/tabs/(recursos:recursos)">
+      <ion-icon name="clipboard"></ion-icon>
+      <ion-label>Test</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers" href="/est/tabs/(calificaciones:calificaciones)">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Estudiantes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="map" href="/est/tabs/(map:map)">
+      <ion-icon name="albums"></ion-icon>
+      <ion-label>Calificaciones</ion-label>
+    </ion-tab-button>
+
+
+  </ion-tab-bar>
+  <ion-tab tab="inicio">
+    <ion-router-outlet name="inicio"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="estudiante">
+    <ion-router-outlet name="estudiante"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="speakers">
+    <ion-router-outlet name="speakers"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="map">
+    <ion-router-outlet name="map"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="about">
+    <ion-router-outlet name="about"></ion-router-outlet>
+  </ion-tab>
+
+</ion-tabs>

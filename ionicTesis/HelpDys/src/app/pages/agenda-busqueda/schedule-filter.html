@@ -19,9 +19,9 @@
   <ion-list>
     <ion-list-header>Tracks</ion-list-header>
 
-    <ion-item *ngFor="let track of tracks" [attr.track]="track.name | lowercase">
+    <ion-item *ngFor="let track of agenda" [attr.track]="track.etiqueta | lowercase">
       <span slot="start" class="dot"></span>
-      <ion-label>{{track.name}}</ion-label>
+      <ion-label>{{track.etiqueta}}</ion-label>
       <ion-toggle [(ngModel)]="track.isChecked" color="success"></ion-toggle>
     </ion-item>
 

@@ -17,6 +17,14 @@
           <ion-icon name="key" item-left></ion-icon>
           <ion-input type="password" placeholder="Password"></ion-input>
         </ion-item>
+
+          <ion-item>
+          <ion-label>Tipo de Usuario</ion-label>
+          <ion-select [(ngModel)]="perfil" class="select()">
+            <ion-select-option value="p">Profesor</ion-select-option>
+            <ion-select-option value="e">Estudiante</ion-select-option>
+          </ion-select>
+        </ion-item>
       </div>
 
       <div padding>
