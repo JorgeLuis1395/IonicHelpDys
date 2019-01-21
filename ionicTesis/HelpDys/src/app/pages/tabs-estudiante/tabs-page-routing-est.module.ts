@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MapPage } from '../reporte/map';
-import { SchedulePage } from '../agenda/schedule';
-import { SessionDetailPage } from '../session-detalles/session-detail';
-import { SpeakerDetailPage } from '../estudiantes/speaker-detail';
 import { SpeakerListPage } from '../estudiantes-lista/speaker-list';
 import {InfoEstudiantePage} from "../info-estudiante/info-estudiante.page";
 import {TabsEstudiantePage} from "./tabs-estudiante.page";
+import {DiagnosticoEstudiantePage} from "../diagnostico-estudiante/diagnostico-estudiante.page";
 
 
 const routes: Routes = [
@@ -22,7 +19,7 @@ const routes: Routes = [
       // tab one
       {
         path: 'recursos',
-        component: SchedulePage,
+        component: DiagnosticoEstudiantePage,
         outlet: 'recursos'
       },
       // tab two

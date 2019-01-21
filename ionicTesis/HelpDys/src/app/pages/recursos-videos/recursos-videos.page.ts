@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recursos-videos.page.scss'],
 })
 export class RecursosVideosPage implements OnInit {
-
+    mostrarComponente = false;
+    mostrarComponente1 = false;
+    mostrarComponente2 = false;
+    mostrarComponente3 = false;
+    mostrarComponente4 = false;
+    mostrarComponente5 = false;
+    mostrarComponente6 = false;
   constructor() { }
 
   ngOnInit() {

@@ -13,6 +13,7 @@ import {SessionDetailModule} from "../session-detalles/session-detail.module";
 import {SpeakerDetailModule} from "../estudiantes/speaker-detail.module";
 import {TabsPageRoutingEstModule} from "./tabs-page-routing-est.module";
 import {InfoEstudiantePageModule} from "../info-estudiante/info-estudiante.module";
+import {DiagnosticoEstudiantePageModule} from "../diagnostico-estudiante/diagnostico-estudiante.module";
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import {InfoEstudiantePageModule} from "../info-estudiante/info-estudiante.modul
       CommonModule,
       IonicModule,
       MapModule,
-      ScheduleModule,
+      DiagnosticoEstudiantePageModule,
       SessionDetailModule,
       SpeakerDetailModule,
       SpeakerListModule,

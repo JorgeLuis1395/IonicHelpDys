@@ -36,6 +36,8 @@ const routes: Routes = [
   { path: 'servicios1', loadChildren: './pages/servicios1/servicios1.module#Servicios1PageModule' },
 
   { path: 'est', loadChildren: './pages/tabs-estudiante/tabs-estudiante.module#TabsEstudiantePageModule' },
+  { path: 'rec', loadChildren: './pages/tabs-contenido/tabs-contenido.module#TabsContenidoPageModule' },
+
 
 
 ];

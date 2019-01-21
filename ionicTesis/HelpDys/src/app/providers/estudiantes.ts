@@ -6,7 +6,7 @@ export class EstudiantesProvider {
 
     constructor(public http: HttpClient){
     }
-    apiUrl = 'http://192.168.1.10:3000';
+    apiUrl = 'http://200.124.230.132:3100';
     getUsers() {
         return new Promise(resolve => {
             this.http.get(this.apiUrl+'/profesor').subscribe(data => {

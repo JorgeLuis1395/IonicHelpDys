@@ -15,19 +15,19 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 
 @NgModule({
-  imports: [
-    BrowserModule,
-      HttpClientModule,
-    AppRoutingModule,
-      FormsModule,
-    IonicModule.forRoot(),
-    IonicStorageModule.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production
-    })
-  ],
-  declarations: [AppComponent],
-  providers: [SplashScreen,Camera, StatusBar,EstudiantesProvider],
-  bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        FormsModule,
+        IonicModule.forRoot(),
+        IonicStorageModule.forRoot(),
+        ServiceWorkerModule.register('ngsw-worker.js', {
+            enabled: environment.production
+        })
+    ],
+    declarations: [AppComponent],
+    providers: [SplashScreen,Camera, StatusBar,EstudiantesProvider],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}

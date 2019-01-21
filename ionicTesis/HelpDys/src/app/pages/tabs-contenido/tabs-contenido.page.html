@@ -1,0 +1,40 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="videos" href="/rec/tabs/(videos:videos)">
+      <ion-icon name="logo-youtube"></ion-icon>
+      <ion-label>Videos</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="cuentos" href="/rec/tabs/(cuentos:cuentos)">
+      <ion-icon name="bookmark"></ion-icon>
+      <ion-label>Cuentos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="juegos" href="/rec/tabs/(juegos:juegos)">
+      <ion-icon name="logo-playstation"></ion-icon>
+      <ion-label>Juegos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="imagenes" href="/rec/tabs/(imagenes:imagenes)">
+      <ion-icon name="images"></ion-icon>
+      <ion-label>Imagenes</ion-label>
+    </ion-tab-button>
+
+
+  </ion-tab-bar>
+  <ion-tab tab="videos">
+    <ion-router-outlet name="videos"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="juegos">
+    <ion-router-outlet name="juegos"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="imagenes">
+    <ion-router-outlet name="imagenes"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="cuentos">
+    <ion-router-outlet name="cuentos"></ion-router-outlet>
+  </ion-tab>
+
+
+</ion-tabs>

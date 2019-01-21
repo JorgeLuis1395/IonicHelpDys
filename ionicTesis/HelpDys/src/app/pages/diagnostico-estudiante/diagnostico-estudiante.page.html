@@ -1,9 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>diagnostico-estudiante</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-
+<ion-content padding class="masters">
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div padding>
+          <div class = "col header text-center">
+            <img src="/assets/imagen/HelpDys.jpeg" class = "logo" />
+          </div>
+          <div padding>
+            <ion-button class="profesores" color="danger" size="large"  expand="block" (click)="onVideos()"> <ion-icon name="logo-youtube"></ion-icon> Videos</ion-button>
+          </div>
+          <div padding>
+            <ion-button color="dark" size="large"  expand="block"> <ion-icon name="bookmark" (click)="onCuentos()"></ion-icon> Cuentos</ion-button>
+          </div>
+          <div padding>
+            <ion-button size="large"  expand="block"> <ion-icon name="logo-playstation" (click)="onJuegos()"></ion-icon> Juegos</ion-button>
+          </div>
+          <div padding>
+            <ion-button color="secondary" size="large"  expand="block"> <ion-icon name="images" (click)="onImagenes()"></ion-icon> Imagenes</ion-button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
