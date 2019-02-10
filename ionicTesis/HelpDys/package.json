@@ -52,7 +52,8 @@
     "moment": "^2.22.2",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "ionic-angular": "latest"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.10.0",

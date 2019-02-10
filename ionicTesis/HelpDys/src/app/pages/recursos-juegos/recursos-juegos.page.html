@@ -1,9 +1,44 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recursos-juegos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title align="center">Juegos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="logo-youtube" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <section text-center margin-bottom>
+    <ion-icon name="logo-game-controller-b"></ion-icon>
+    <h1 style="font-size:1.4em" no-margin>Juegos</h1>
+  </section>
+  <section>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <ion-card class="stilo" text-center padding color="danger">
+            <ion-icon name="person"></ion-icon>
+            <h1 style="font-size:1.4em" no-margin>
+              El Ahorcado
+            </h1>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-card class="stilo" text-center padding color="danger">
+            <ion-icon name="alert"></ion-icon>
+            <h1 style="font-size:1.4em" no-margin>
+              Juego de Memoria
+            </h1>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
 </ion-content>
