@@ -7,7 +7,13 @@ import { NavController, AlertController } from 'ionic-angular';
   styleUrls: ['./ahorcado.page.scss'],
 })
 export class AhorcadoPage {
-    palabra = 'LEON';
+    participantes = ['ARAÑA', 'BURRO', 'CARRO', 'DADO', 'ELEFANTE', 'FOCA', 'GATO', 'HOJA', 'IGUANA', 'JIRAFA', 'LEON', 'MURCIELAGO', 'NIÑO', 'OSO', 'PELOTA', 'QUESO', 'RATON', 'SAPO', 'TOMATE', 'UNO', 'SIETE', 'SEIS', 'NUEVE'];
+    imagenes = ['leon.jpg', 'carro.png'];
+    numero_participantes = this.participantes.length;
+    numero = Math.floor(Math.random() * this.numero_participantes);
+
+    palabra = this.participantes[this.numero];
+    imagen = this.imagenes[this.numero];
     palabraOculta = '';
 
     intentos = 0;
@@ -22,19 +28,19 @@ export class AhorcadoPage {
 
     constructor() {
 
-        this.palabraOculta = '_ '.repeat( this.palabra.length );
+        this.palabraOculta = '_ '.repeat(this.palabra.length);
 
     }
 
-    comprobar( letra ) {
+    comprobar(letra) {
 
         this.existeLetra(letra);
 
         const palabraOcultaArr = this.palabraOculta.split(' ');
 
-        for ( let i = 0; i < this.palabra.length; i ++ ) {
+        for (let i = 0; i < this.palabra.length; i++) {
 
-            if ( this.palabra[i] === letra ) {
+            if (this.palabra[i] === letra) {
                 palabraOcultaArr[i] = letra;
             }
 
@@ -49,13 +55,13 @@ export class AhorcadoPage {
 
         const palabraArr = this.palabraOculta.split(' ');
         const palabraEvaluar = palabraArr.join('');
-        for ( let i = 0; i < this.palabra.length; i ++ ) {
-            if ( palabraEvaluar === this.palabra ) {
+        for (let i = 0; i < this.palabra.length; i++) {
+            if (palabraEvaluar === this.palabra) {
                 this.gano = true;
                 console.log('Usuario GANO');
             }
 
-            if ( this.intentos >= 9 ) {
+            if (this.intentos >= 9) {
                 this.perdio = true;
                 console.log('Usuario perdio');
             }
@@ -63,13 +69,13 @@ export class AhorcadoPage {
     }
 
 
-    existeLetra( letra ) {
+    existeLetra(letra) {
 
-        if ( this.palabra.indexOf( letra ) >= 0  ) {
+        if (this.palabra.indexOf(letra) >= 0) {
             // console.log('Letra existe ' + letra );
         } else {
             // console.log('Letra NO existe ' + letra );
-            this.intentos ++;
+            this.intentos++;
         }
 
     }

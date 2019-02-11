@@ -7,10 +7,10 @@
 <ion-content padding>
   <ion-row>
     <ion-col col-6>
-      <img src="assets/img/intentos/{{ intentos }}.png" width="200" height="200" class="ahorcado-img">
+      <img src="assets/recursos/intentos/{{ intentos }}.png" width="200" height="200" class="ahorcado-img">
     </ion-col>
     <ion-col col-6>
-      <img src="assets/imagen/leon.jpg" width="200" height="200">
+      <img src="assets/recursos/ahorcado/{{ imagen }}" width="200" height="200">
 
     </ion-col>
   </ion-row>
@@ -51,7 +51,7 @@
   </div>
   <div class="row">
     <div class="col-sm-12" align="center">
-      <button class="btn btn-dark btn-primary"> <a routerLink="/Tratamiento/Juegos/Ahorcado/2">Siguiente Palabra</a></button>
+      <button class="btn btn-dark btn-primary" onClick="location.reload();" > Siguiente Palabra</button>
     </div>
   </div>
 </ion-content>
