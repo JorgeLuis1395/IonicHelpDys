@@ -8,7 +8,7 @@ import { NavController, AlertController } from 'ionic-angular';
 })
 export class AhorcadoPage {
     participantes = ['ARAÑA', 'BURRO', 'CARRO', 'DADO', 'ELEFANTE', 'FOCA', 'GATO', 'HOJA', 'IGUANA', 'JIRAFA', 'LEON', 'MURCIELAGO', 'NIÑO', 'OSO', 'PELOTA', 'QUESO', 'RATON', 'SAPO', 'TOMATE', 'UNO', 'SIETE', 'SEIS', 'NUEVE'];
-    imagenes = ['leon.jpg', 'carro.png'];
+    imagenes = ['araña.PNG', 'burro.PNG','carro.PNG','dado.PNG','elefante.PNG','foca.PNG','gato.PNG','hoja.PNG','iguana.PNG','jirafa.PNG','leon.PNG','murcielago.PNG','niño.PNG','oso.PNG','pelota.PNG','queso.PNG','raton.PNG','sapo.PNG','tomate.PNG','UNO.PNG','siete.PNG','seis.PNG','nueve.PNG'];
     numero_participantes = this.participantes.length;
     numero = Math.floor(Math.random() * this.numero_participantes);
 

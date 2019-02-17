@@ -1,0 +1,32 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="menu" href="/juegos/tabs/(menu:menu)">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="ahorcado" href="/juegos/tabs/(ahorcado:ahorcado)">
+      <ion-icon name="clipboard"></ion-icon>
+      <ion-label>Recursos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="memoria" href="/juegos/tabs/(memoria:memoria)">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Estudiantes</ion-label>
+    </ion-tab-button>
+
+
+
+  </ion-tab-bar>
+  <ion-tab tab="menu">
+    <ion-router-outlet name="menu"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="ahorcado">
+    <ion-router-outlet name="ahorcado"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="memoria">
+    <ion-router-outlet name="memoria"></ion-router-outlet>
+  </ion-tab>
+
+</ion-tabs>
