@@ -6,7 +6,6 @@ import { IonicModule } from '@ionic/angular';
 import { TabsEstudiantePage } from './tabs-estudiante.page';
 import {SpeakerListModule} from "../estudiantes-lista/speaker-list.module";
 import {MapModule} from "../reporte/map.module";
-import {ScheduleModule} from "../agenda/schedule.module";
 import {SessionDetailModule} from "../session-detalles/session-detail.module";
 import {SpeakerDetailModule} from "../estudiantes/speaker-detail.module";
 import {TabsPageRoutingEstModule} from "./tabs-page-routing-est.module";

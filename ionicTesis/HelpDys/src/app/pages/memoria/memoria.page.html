@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>memoria</ion-title>
+    <ion-title>Memoria</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
     </div>
     <div class="mesa-cartas">
   <span *ngFor="let card of cards; index as i">
-   <img class="img-card" src="{{card.visible ? card.url : images_inact}}" (click)="card_selected(i)" height="130px" width="130px">
+   <img class="img-card" src="{{card.visible ? card.url : images_inact}}" (click)="card_selected(i)" height="120px" width="120px">
   </span>
     </div>
   </div>

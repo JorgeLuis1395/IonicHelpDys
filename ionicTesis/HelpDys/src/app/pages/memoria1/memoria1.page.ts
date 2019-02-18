@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-memoria1',
   templateUrl: './memoria1.page.html',
@@ -9,21 +10,19 @@ export class Memoria1Page implements OnInit {
     private images = [
         {id: 1, url: "/assets/imagen/homero.jpg"},
         {id: 2, url: "/assets/imagen/burns.jpg"},
-        {id: 3, url: "/assets/imagen/home1.jpg"},
-        {id: 4, url: "/assets/imagen/home2.jpeg"},
-        {id: 5, url: "/assets/imagen/poke.jpg"},
-        {id: 6, url: "/assets/imagen/charman.png"},
-        {id: 7, url: "/assets/imagen/bul.jpeg"},
-        {id: 8, url: "/assets/imagen/pid.png"}
+        {id: 3, url: "/assets/imagen/poke.jpg"},
+        {id: 4, url: "/assets/imagen/charman.png"},
+        {id: 5, url: "/assets/imagen/bul.jpeg"},
+        {id: 6, url: "/assets/imagen/pid.png"}
     ];
-    public images_inact = "/assets/imagenes/poker.png";
+    public images_inact = "/assets/imagen/poker.png";
     public cards = [];
     private last_select_id = null;
-    private aciertos = 8;
+    private aciertos = 6;
     private count_aciertos = 0;
-    public intentos = 32;
+    public intentos = 24;
     public cont_intentos = 0;
-  constructor(public alertController: AlertController) { }
+  constructor(public alertController: AlertController,public router: Router) { }
     ngOnInit() {
         let count_index = 0;
         for (let i = 0; i < this.aciertos * 2; i++) {
@@ -104,16 +103,9 @@ export class Memoria1Page implements OnInit {
             message: 'Felicitaciones <strong><img src="/assets/imagen/totodile.gif"></strong>!!!',
             buttons: [
                 {
-                    text: 'Siguiente Nivel',
-                    role: 'cancel',
-                    cssClass: 'secondary',
-                    handler: (blah) => {
-                        console.log('Confirm Cancel: blah');
-                    }
-                }, {
                     text: 'Menu',
                     handler: () => {
-                        console.log('Confirm Okay');
+                        this.router.navigateByUrl('est/tabs/(inicio:inicio)');
                     }
                 }
             ]
@@ -136,7 +128,7 @@ export class Memoria1Page implements OnInit {
                 }, {
                     text: 'Menu',
                     handler: () => {
-                        console.log('Confirm Okay');
+                        this.router.navigateByUrl('est/tabs/(inicio:inicio)');
                     }
                 }
             ]

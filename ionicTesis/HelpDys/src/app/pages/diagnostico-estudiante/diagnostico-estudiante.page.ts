@@ -19,7 +19,7 @@ export class DiagnosticoEstudiantePage implements OnInit {
         this.router.navigateByUrl('rec/tabs/(cuentos:cuentos)');
     }
     onJuegos() {
-        this.router.navigateByUrl('rec/tabs/(juegos:juegos)');
+        this.router.navigateByUrl('jue/tabs/(menu:menu)');
     }
     onImagenes() {
         this.router.navigateByUrl('rec/tabs/(imagenes:imagenes)');

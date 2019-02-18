@@ -89,7 +89,7 @@ export class MemoriaPage implements OnInit {
                     role: 'cancel',
                     cssClass: 'secondary',
                     handler: (blah) => {
-                        this.router.navigateByUrl('/memoria1');
+                        this.router.navigateByUrl('jue/tabs/(memoria:memoria1)');
                     }
                 }, {
                     text: 'Menu',
