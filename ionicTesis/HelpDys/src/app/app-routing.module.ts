@@ -39,6 +39,7 @@ const routes: Routes = [
   { path: 'rec', loadChildren: './pages/tabs-contenido/tabs-contenido.module#TabsContenidoPageModule' },
 
   { path: 'jue', loadChildren: './pages/tabs-juegos/tabs-juegos.module#TabsJuegosPageModule' },
+  { path: 'cuentos', loadChildren: './pages/cuentos/cuentos/cuentos.module#CuentosPageModule' },
 
 
 
