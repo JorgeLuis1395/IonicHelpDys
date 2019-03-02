@@ -19,6 +19,7 @@ export class RegistroProfesorPage implements OnInit {
     foto:'';
     fotos:any;
     contrasena:'' ;
+    private base64Image : string;
   constructor(
       public restProvider: EstudiantesProvider,
       private toastCtrl: ToastController,
@@ -49,16 +50,16 @@ export class RegistroProfesorPage implements OnInit {
     }
     takePhoto(){
         const options: CameraOptions = {
-            quality: 70,
-            destinationType: this.camera.DestinationType.FILE_URI,
+            quality: 100,
+            destinationType: this.camera.DestinationType.DATA_URL,
             encodingType: this.camera.EncodingType.JPEG,
             mediaType: this.camera.MediaType.PICTURE
         }
 
         this.camera.getPicture(options).then((imageData) => {
             // imageData is either a base64 encoded string or a file URI
-            // If it's base64 (DATA_URL):
-            this.fotos  = 'data:image/jpeg;base64,' + imageData;
+            // If it's base64:
+            this.base64Image = 'data:image/jpeg;base64,' + imageData;
         }, (err) => {
             // Handle error
         });

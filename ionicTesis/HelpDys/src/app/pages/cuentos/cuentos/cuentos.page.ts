@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CuentosProvider} from "../../../providers/cuentos";
 
 @Component({
   selector: 'app-cuentos',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuentosPage implements OnInit {
 
-  constructor() { }
-
+  constructor(private _cuentosService: CuentosProvider) { }
+ cuentos: any;
   ngOnInit() {
+    this.cargarCuentos()
+  }
+
+  cargarCuentos(){
+    this._cuentosService.getCuentos()
+        .then(data => {
+          this.cuentos = data;
+          console.log(this.cuentos);
+        });
   }
 
 }

@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 import {EstudiantesProvider} from "./providers/estudiantes";
 import {FormsModule} from "@angular/forms";
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
+import {CuentosProvider} from "./providers/cuentos";
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
         })
     ],
     declarations: [AppComponent],
-    providers: [SplashScreen,Camera, StatusBar,EstudiantesProvider],
+    providers: [SplashScreen,Camera, StatusBar,EstudiantesProvider,CuentosProvider],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
