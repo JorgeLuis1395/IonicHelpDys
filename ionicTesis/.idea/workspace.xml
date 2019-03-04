@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a441006a-8a4e-4b9d-9587-d06975a58b0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelpDys/src/app/providers/login.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,43 +24,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/global.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="425">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#ion-input#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="284">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/datosUsuario.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="162">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,20 +136,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-page/tabs-page.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/reporte/map.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/reporte/map.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/reporte/map.scss" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/reporte/map.module.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registros/registros.page.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registros/registros.page.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/signup/signup.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.module.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-page-routing-est.module.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/index.html" />
         <option value="$PROJECT_DIR$/HelpDys/config.xml" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-contenido/tabs-page-routing-est.module.ts" />
@@ -136,11 +171,22 @@
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/memoria1/memoria1.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-juegos/tabs-juegos.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/providers/login.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/login/login.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/providers/global.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/providers/datosUsuario.ts" />
       </list>
     </option>
   </component>
@@ -155,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,39 +241,12 @@
               <item name="HelpDys" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="cuentos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ionicTesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ionicTesis" type="462c0819:PsiDirectoryNode" />
-              <item name="HelpDys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="cuentos" type="462c0819:PsiDirectoryNode" />
-              <item name="cuentos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ionicTesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ionicTesis" type="462c0819:PsiDirectoryNode" />
-              <item name="HelpDys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ionicTesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ionicTesis" type="462c0819:PsiDirectoryNode" />
-              <item name="HelpDys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="imagen" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,19 +264,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/HelpDys/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/HelpDys/src/assets/imagen" />
-      <recent name="$PROJECT_DIR$/HelpDys/src/assets/recursos/ahorcado" />
-      <recent name="C:\Users\Usuario\Documents\GitHub\IonicHelpDys\ionicTesis\HelpDys\src\assets\imagen" />
-      <recent name="$PROJECT_DIR$/HelpDys/src/app/services" />
-      <recent name="$PROJECT_DIR$/HelpDys/src/app/pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\GitHub\IonicHelpDys\ionicTesis\HelpDys\src\app\pages\cuentos\cuentos" />
       <recent name="$PROJECT_DIR$/HelpDys/src/app/pages/ahorcado" />
       <recent name="C:\Users\Usuario\Documents\GitHub\IonicHelpDys\ionicTesis\HelpDys\src\app\pages\tabs-contenido" />
       <recent name="C:\Users\Usuario\Documents\GitHub\IonicHelpDys\ionicTesis\HelpDys\resources\android\icon" />
       <recent name="$PROJECT_DIR$/HelpDys/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HelpDys/src/assets/imagen" />
+      <recent name="$PROJECT_DIR$/HelpDys/src/assets/recursos/ahorcado" />
+      <recent name="C:\Users\Usuario\Documents\GitHub\IonicHelpDys\ionicTesis\HelpDys\src\assets\imagen" />
+      <recent name="$PROJECT_DIR$/HelpDys/src/app/services" />
+      <recent name="$PROJECT_DIR$/HelpDys/src/app/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,23 +321,25 @@
       <workItem from="1550370119332" duration="280000" />
       <workItem from="1550442607039" duration="10251000" />
       <workItem from="1551512195222" duration="3918000" />
+      <workItem from="1551722901679" duration="8323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170121000" />
+    <option name="totallyTimeSpent" value="216878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16787839" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16787839" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Job Explorer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Project Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32927758" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32927758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -325,92 +347,45 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Console" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.3654391" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3654391" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4990086" weight="0.3654391" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.3268734" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16787839" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Job Explorer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Project Explorer" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32927758" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Console" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="DB Execution Console" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4990086" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.3268734" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2756">
-          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/diagnostico-estudiante/diagnostico-estudiante.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tabs-page/tabs-page-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/infoest-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/ahorcado/ahorcado.module.ts" />
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/ahorcado/ahorcado.page.ts" />
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/ahorcado/ahorcado-routing.module.ts" />
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.module.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="37" column="93" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tabs-juegos/tabs-juegos.page.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -470,16 +445,6 @@
         <state>
           <folding>
             <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="47" column="3" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="47" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/diagnostico-estudiante/diagnostico-estudiante.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/memoria/memoria.page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -596,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/memoria/memoria.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2236">
-          <caret line="22" column="77" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -614,33 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="89" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="66" lean-forward="true" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -660,27 +584,115 @@
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="287">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="130" selection-start-line="31" selection-start-column="130" selection-end-line="31" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/user-data.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts">
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/memoria/memoria.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="340">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="55" />
+          <folding>
+            <element signature="n#!!block;n#presentAlertConfirm#0;n#MemoriaPage#0" />
+            <element signature="n#!!block;n#presentAlertPerdiste#0;n#MemoriaPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tutorial/tutorial.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/tutorial/tutorial.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/diagnostico-estudiante/diagnostico-estudiante.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/estudiante-inicio/estudiante-inicio.page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -689,8 +701,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state>
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/estudiantes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/global.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#ion-input#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/datosUsuario.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

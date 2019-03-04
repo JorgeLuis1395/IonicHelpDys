@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {EstudiantesProvider} from "../../providers/estudiantes";
 import {Router} from "@angular/router";
+import {Globals} from "../../providers/global";
 
 @Component({
   selector: 'app-new-event',
@@ -18,7 +19,7 @@ export class NewEventPage implements OnInit {
     descripcion:'';
 
   constructor(
-      public restProvider: EstudiantesProvider,
+      public restProvider: EstudiantesProvider, public global: Globals,
       public router: Router,
   ) {this.etiqueta = 'reuniones'; }
 
@@ -28,7 +29,7 @@ export class NewEventPage implements OnInit {
         console.log(this.etiqueta)
     }
     saveEvent() {
-        this.restProvider.postAgenda(this.fecha,this.nombre,this.hora_inicio,this.hora_fin,this.ubicacion,this.etiqueta,this.descripcion).then((result) => {
+        this.restProvider.postAgenda(this.fecha,this.nombre,this.hora_inicio,this.hora_fin,this.ubicacion,this.etiqueta,this.descripcion, this.global.idProfesor).then((result) => {
             console.log(result);
             this.router.navigateByUrl('app/tabs/(schedule:schedule)');
         }, (err) => {

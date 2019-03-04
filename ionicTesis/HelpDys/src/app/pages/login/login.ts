@@ -5,8 +5,11 @@ import {Router} from '@angular/router';
 import {UserData} from '../../providers/user-data';
 
 import {UserOptions} from '../../interfaces/user-options';
-import {MenuController} from '@ionic/angular';
+import {AlertController, MenuController} from '@ionic/angular';
 import {EstudiantesProvider} from '../../providers/estudiantes';
+import {LoginProvider} from "../../providers/login";
+import {Globals} from "../../providers/global";
+import {tokenize} from "@angular/compiler/src/ml_parser/lexer";
 
 @Component({
     selector: 'page-login',
@@ -18,35 +21,43 @@ export class LoginPage implements OnInit{
     login: UserOptions = {username: '', password: ''};
     submitted = false;
     perfil: string;
-    profesor: any;
+    tokenProfesor: any;
     ngOnInit() {
-        this.consultarProfesor();
     }
     constructor(
         public menu: MenuController,
         public userData: UserData,
         public router: Router,
-        private _profesor: EstudiantesProvider
+        private _login: LoginProvider,
+        private global: Globals,
+        public alertController: AlertController,
     ) {
         this.perfil = 'p';
     }
+
+    nick: '';
+    password: '';
+
 
     select() {
         if (this.perfil == 'e') {
             this.router.navigateByUrl('est/tabs/(inicio:inicio)');
         }
         if (this.perfil == 'p') {
-            this.consultarProfesor();
             this.router.navigateByUrl('app/tabs/(about:about)');
         }
     }
 
     onLogin() {
+
         if (this.perfil == 'e') {
-            this.router.navigateByUrl('est/tabs/(inicio:inicio)');
+            this.sendLoginEst()
+            console.log(this.global.nick)
+
         }
         if (this.perfil == 'p') {
-            this.router.navigateByUrl('app/tabs/(about:about)');
+            this.sendLogin()
+
         }
     }
 
@@ -54,16 +65,53 @@ export class LoginPage implements OnInit{
         this.router.navigateByUrl('/signup');
     }
 
-    consultarProfesor() {
-        this._profesor.getUsers().then(data => {
-            this.profesor = data;
-            console.log(this.profesor);
-        });
+    sendLogin() {
 
-        for (const valor of this.profesor) {
-            console.log("Valor: " + valor);
-        }
+        this._login.postLogin(this.nick, this.password).then((result) => {
+            this.global.nick = this.nick;
+            this.global.tokenUsuario = Object.values(result)[0];
+
+            console.log( this.global.tokenUsuario)
+            this.router.navigateByUrl('app/tabs/(about:about)');
+        }, (err) => {
+            this.presentAlertIncorrecto();
+            console.log(err);
+        });
     }
 
+    sendLoginEst() {
+        this._login.postLoginEst(this.nick, this.password).then((result) => {
+            this.global.nick = this.nick;
+            this.router.navigateByUrl('est/tabs/(inicio:inicio)');
+
+        }, (err) => {
+            this.presentAlertIncorrecto();
+            console.log(err);
+        });
+    }
+
+    async presentAlertIncorrecto() {
+        const alert1 = await this.alertController.create({
+            header: 'Datos Incorrectos!',
+            message: 'Error de Inicio de Sesión revisa los siguientes campos: Rol, Nick, Contraseña',
+            buttons: [
+                {
+                    text: 'Volver a intentarlo',
+                    role: 'cancel',
+                    cssClass: 'secondary',
+                    handler: (blah) => {
+                        window.location.reload();
+                    }
+                }, {
+                    text: 'Registrarse',
+                    handler: () => {
+                        this.router.navigateByUrl('/registroProfesor');
+                    }
+                }
+            ]
+        });
+
+        await alert1.present();
+    }
 
 }

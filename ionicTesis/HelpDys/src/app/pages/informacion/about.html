@@ -15,14 +15,15 @@
 <ion-content>
   <div class="about-header">
     <ion-avatar class="avatar" >
-      <img src="/assets/imagen/profesor.jpeg">
+      <img src="{{usuario.nombre_foto}}">
     </ion-avatar>
   </div>
   <div padding class="about-info">
     <h4 align="center">Hola Bienvenido a HelpDys</h4>
-    <h5>Nombre: {{username}}</h5>
-    <h5>Apellido: {{username}}</h5>
-    <h5>Email: {{username}}</h5>
+    <h5>Nombre: {{usuario.nombre}}</h5>
+    <h5>Apellido: {{usuario.apellido}}  {{usuario.id}}</h5>
+    <h5>Email: {{usuario.email}}</h5>
+    <ion-input  type="text" style="display: none"  ></ion-input>
   </div>
   <div padding class="about-info">
     <p>HelpDys Profesores es una aplicación que permite a cada uno de los usuarios en este caso profesores, crear una lista de actividades, dar de alta a nuevos estudiantes, observar reportes de los estudiantes</p>
