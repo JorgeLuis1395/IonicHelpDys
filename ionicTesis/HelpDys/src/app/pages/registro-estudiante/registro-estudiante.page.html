@@ -1,62 +1,94 @@
 <ion-content>
-  <ion-infinite-scroll>
-    <div padding>
-      <h3 align="center">Registro de Estudiante</h3>
-      <div class="row header">
-        <div class="col"><div class = "col header text-center">
-          <p>
-            <img src="{{fotos}}" /></p></div>
+    <ion-infinite-scroll>
+        <div padding>
+            <h3 align="center">Registro de Estudiante</h3>
+            <div class="row header">
+                <h3 *ngIf="images.length == 0" text-center>Please Select Image!</h3>
+
+                <ion-list>
+                    <ion-item *ngFor="let img of images; index as pos" text-wrap>
+                        <ion-thumbnail slot="start">
+                            <ion-img [src]="img.path"></ion-img>
+                        </ion-thumbnail>
+                        <ion-label>
+                            {{ img.name }}
+                        </ion-label>
+                        <ion-button slot="end" fill="clear" (click)="startUpload(img)">
+                            <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
+                        </ion-button>
+                        <ion-button slot="end" fill="clear" (click)="deleteImage(img, pos)">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-button>
+                    </ion-item>
+                </ion-list>
+
+                <ion-footer>
+                    <ion-toolbar color="primary">
+                        <ion-button fill="clear" expand="full" color="light" (click)="selectImage()">
+                            <ion-icon slot="start" name="camera"></ion-icon>
+                            Select Image
+                        </ion-button>
+                    </ion-toolbar>
+                </ion-footer>
+                <div class="col">
+                    <div class="col header text-center">
+                        <p>
+                            <img src="{{fotos}}"/></p></div>
+                </div>
+                <button ion-button icon-only (click)="takePhoto()">
+                    <ion-icon name="camera"></ion-icon>
+                </button>
+            </div>
+            <ion-item>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input type="text" [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input type="text" [(ngModel)]="apellido" placeholder="Apellido"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="mail"></ion-icon>
+                <ion-input type="email" [(ngModel)]="email_representante" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="call"></ion-icon>
+                <ion-input type="tel" [(ngModel)]="telefono_representante" placeholder="Telefono"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="calendar"></ion-icon>
+                <ion-input placeholder="Fecha Nacimiento"></ion-input>
+                <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fecha_nacimiento"></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="logo-reddit"></ion-icon>
+                <ion-input type="text" [(ngModel)]="codigo_estudiante" placeholder="Codigo Estudiante"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Año de Educacion Básica</ion-label>
+                <ion-select [(ngModel)]="grado" class="select()">
+                    <ion-select-option value="1">1</ion-select-option>
+                    <ion-select-option value="2">2</ion-select-option>
+                    <ion-select-option value="3">3</ion-select-option>
+                    <ion-select-option value="4">4</ion-select-option>
+                    <ion-select-option value="5">5</ion-select-option>
+                    <ion-select-option value="6">6</ion-select-option>
+                    <ion-select-option value="7">7</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="key" item-left></ion-icon>
+                <ion-input type="password" [(ngModel)]="contrasenia" placeholder="Contraseña"></ion-input>
+            </ion-item>
+
+            <div padding>
+                <ion-button color="dark" size="large" type="submit" expand="block" (click)="saveEstudiante()">
+                    Registrar
+                </ion-button>
+            </div>
         </div>
-        <button ion-button icon-only (click)="takePhoto()"> <ion-icon name="camera"></ion-icon></button>
-      </div>
-      <ion-item>
-        <ion-icon name="person" item-left></ion-icon>
-        <ion-input type="text" [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="person" item-left></ion-icon>
-        <ion-input type="text" [(ngModel)]="apellido" placeholder="Apellido"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="mail"></ion-icon>
-        <ion-input type="email" [(ngModel)]="email_representante" placeholder="Email"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="call"></ion-icon>
-        <ion-input type="tel" [(ngModel)]="telefono_representante"  placeholder="Telefono"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="calendar"></ion-icon>
-        <ion-input placeholder="Fecha Nacimiento"></ion-input>
-        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fecha_nacimiento"></ion-datetime>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="logo-reddit"></ion-icon>
-        <ion-input type="text" [(ngModel)]="codigo_estudiante" placeholder="Codigo Estudiante"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Año de Educacion Básica</ion-label>
-        <ion-select [(ngModel)]="grado" class="select()">
-          <ion-select-option value="1">1</ion-select-option>
-          <ion-select-option value="2">2</ion-select-option>
-          <ion-select-option value="3">3</ion-select-option>
-          <ion-select-option value="4">4</ion-select-option>
-          <ion-select-option value="5">5</ion-select-option>
-          <ion-select-option value="6">6</ion-select-option>
-          <ion-select-option value="7">7</ion-select-option>
-        </ion-select>
-      </ion-item>
-
-        <ion-item>
-        <ion-icon name="key" item-left></ion-icon>
-        <ion-input type="password" [(ngModel)]="contrasenia" placeholder="Contraseña"></ion-input>
-      </ion-item>
-
-      <div padding>
-        <ion-button color="dark" size="large"  type="submit" expand="block"  (click)="saveEstudiante()" >Registrar</ion-button>
-      </div>
-    </div>
-  </ion-infinite-scroll>
+    </ion-infinite-scroll>
 </ion-content>

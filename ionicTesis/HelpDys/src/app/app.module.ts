@@ -29,7 +29,7 @@ import {Globals} from "./providers/global";
         }),
     ],
     declarations: [AppComponent],
-    providers: [SplashScreen, Camera, StatusBar, EstudiantesProvider, CuentosProvider, LoginProvider,DatosUsuarioProvider, Globals],
+    providers: [SplashScreen, Camera, StatusBar, EstudiantesProvider, CuentosProvider, LoginProvider, DatosUsuarioProvider, Globals,],
     bootstrap: [AppComponent]
 })
 export class AppModule {
