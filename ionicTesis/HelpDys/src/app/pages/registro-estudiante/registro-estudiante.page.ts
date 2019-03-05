@@ -1,34 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import {ToastController} from "@ionic/angular";
-import {EstudiantesProvider} from "../../providers/estudiantes";
-import {Camera, CameraOptions} from "@ionic-native/camera/ngx";
-import {Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {ToastController} from '@ionic/angular';
+import {EstudiantesProvider} from '../../providers/estudiantes';
+import {Camera, CameraOptions} from '@ionic-native/camera/ngx';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-registro-estudiante',
-  templateUrl: './registro-estudiante.page.html',
-  styleUrls: ['./registro-estudiante.page.scss'],
+    selector: 'app-registro-estudiante',
+    templateUrl: './registro-estudiante.page.html',
+    styleUrls: ['./registro-estudiante.page.scss'],
 })
 
 export class RegistroEstudiantePage implements OnInit {
     nombre: '';
     apellido: '';
-    email_representante: '';
-    telefono_representante: '';
-    fecha_nacimiento: '';
+    email: '';
+    nick: '';
+    password: '';
+    cedula: '';
     codigo_estudiante: '';
+    fecha_nacimiento: '';
     grado: number;
-    fotos:any;
-    contrasenia:'' ;
-    puntuacion:'';
-  constructor(public restProvider: EstudiantesProvider,
-              public router: Router,
-              public camera:Camera) { this.grado = 1;}
+    telefono: '';
+    unidad_educativa: '';
+    nombreFoto: '';
+    private base64Image: string;
 
-  ngOnInit() {
-  }
+    constructor(public restProvider: EstudiantesProvider,
+                public router: Router,
+                public camera: Camera) {
+        this.grado = 1;
+    }
+
+    ngOnInit() {
+    }
+
     saveEstudiante() {
-        this.restProvider.postEstudiantes(this.nombre,this.apellido,this.email_representante,this.fecha_nacimiento,this.fotos,this.grado,this.codigo_estudiante,this.contrasenia, this.telefono_representante, this.puntuacion).then((result) => {
+        this.restProvider.postEstudiantes(this.nombre, this.apellido, this.email, this.fecha_nacimiento, this.nick, this.grado, this.codigo_estudiante, this.cedula, this.telefono, this.unidad_educativa, this.nombreFoto, this.password).then((result) => {
             console.log(result);
             this.router.navigateByUrl('app/tabs/(speakers:speakers)');
         }, (err) => {
@@ -36,18 +43,18 @@ export class RegistroEstudiantePage implements OnInit {
         });
     }
 
-    takePhoto(){
+    takePhoto() {
         const options: CameraOptions = {
-            quality: 70,
-            destinationType: this.camera.DestinationType.FILE_URI,
+            quality: 100,
+            destinationType: this.camera.DestinationType.DATA_URL,
             encodingType: this.camera.EncodingType.JPEG,
             mediaType: this.camera.MediaType.PICTURE
-        }
+        };
 
         this.camera.getPicture(options).then((imageData) => {
             // imageData is either a base64 encoded string or a file URI
-            // If it's base64 (DATA_URL):
-            this.fotos  = 'data:image/jpeg;base64,' + imageData;
+            // If it's base64:
+            this.base64Image = 'data:image/jpeg;base64,' + imageData;
         }, (err) => {
             // Handle error
         });
