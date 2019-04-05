@@ -1,49 +1,30 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button text="Detalles" defaultHref="http://localhost:3000/agenda"></ion-back-button>
+      <ion-back-button text="Detalles" ></ion-back-button>
     </ion-buttons>
-    <ion-title>{{agenda?.name}}</ion-title>
+    <ion-title>{{agenda?.nombre}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div padding *ngIf="agenda">
-    <ion-grid no-padding>
-      <ion-row>
-        <ion-col size="6">
-          <span *ngFor="let agendas of agenda" [class]="'session-track-'+agendas.toLowerCase()">{{etiqueta}}</span>
-        </ion-col>
-        <ion-col size="6" text-right [ngClass]="{'show-favorite': isFavorite}">
-          <ion-icon name="heart-empty" size="large" class="icon-heart-empty" (click)="toggleFavorite()"></ion-icon>
-          <ion-icon name="heart" color="danger" size="large" class="icon-heart" (click)="toggleFavorite()"></ion-icon>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <h1>{{agenda.nombre}}</h1>
-    <p>{{agenda.descripcion}}</p>
+  <div>
+
+    <h3> Nombre: {{agenda.nombre}}</h3>
+    <p> Descripcion: {{agenda.descripcion}}</p>
+    <p> Categoria: {{agenda.etiqueta}}</p>
+
     <ion-text color="medium">
+      Fechas:
+      {{agenda.fecha}} &ndash; {{agenda.fecha_fin}}
+      <br />
+      Hora:
       {{agenda.hora_inicio}} &ndash; {{agenda.hora_fin}}
-      <br /> {{agenda.location}}
     </ion-text>
+
+    <p> Ubicacion: {{agenda.ubicacion}}</p>
+
+
   </div>
 
-  <ion-list>
-    <ion-item (click)="sessionClick('watch')" button>
-      <ion-label color="primary">Watch</ion-label>
-    </ion-item>
-    <ion-item (click)="sessionClick('add to calendar')" button>
-      <ion-label color="primary">Add to Calendar</ion-label>
-    </ion-item>
-    <ion-item (click)="sessionClick('mark as unwatched')" button>
-      <ion-label color="primary">Mark as Unwatched</ion-label>
-    </ion-item>
-    <ion-item (click)="sessionClick('download video')" button>
-      <ion-label color="primary">Download Video</ion-label>
-      <ion-icon slot="end" color="primary" size="small" name="cloud-download"></ion-icon>
-    </ion-item>
-    <ion-item (click)="sessionClick('leave feedback')" button>
-      <ion-label color="primary">Leave Feedback</ion-label>
-    </ion-item>
-  </ion-list>
 </ion-content>

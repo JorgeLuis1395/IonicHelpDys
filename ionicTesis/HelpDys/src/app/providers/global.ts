@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class Globals {
     nick: string ;
-    apiUrl = 'http://192.168.1.9:3000';
+    apiUrl = 'http://200.124.230.132:3100';
     tokenUsuario: string;
     idProfesor: string;
+    idAgenda: number;
 }

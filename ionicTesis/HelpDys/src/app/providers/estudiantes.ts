@@ -18,7 +18,7 @@ export class EstudiantesProvider {
 
     getUsers() {
         return new Promise(resolve => {
-            this.http.get(this.global.apiUrl + '/profesor', this.httpOptions).subscribe(data => {
+            this.http.get(this.global.apiUrl + '/profesor', {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {
@@ -29,7 +29,7 @@ export class EstudiantesProvider {
 
     getAgenda() {
         return new Promise(resolve => {
-            this.http.get(this.global.apiUrl + '/agenda/' + this.global.idProfesor, this.httpOptions).subscribe(data => {
+            this.http.get(this.global.apiUrl + '/agenda/' + this.global.idAgenda, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {
@@ -40,7 +40,7 @@ export class EstudiantesProvider {
 
     getEstudiantes() {
         return new Promise(resolve => {
-            this.http.get(this.global.apiUrl + '/estudiante', this.httpOptions).subscribe(data => {
+            this.http.get(this.global.apiUrl + '/estudiante',{headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {
@@ -51,7 +51,7 @@ export class EstudiantesProvider {
 
     goToSessionDetail(sessionData: any) {
         return new Promise(resolve => {
-            this.http.get(`http://localhost:3000/agenda/${sessionData.id}`).subscribe(data => {
+            this.http.get(`http://200.124.230.132:3100/agenda/${sessionData.id}`).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {
@@ -75,7 +75,7 @@ export class EstudiantesProvider {
         };
         console.log(param);
         return new Promise((resolve, reject) => {
-            this.http.post(this.global.apiUrl + '/profesor', param, this.httpOptions)
+            this.http.post(this.global.apiUrl + '/profesor', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
                 .subscribe(res => {
                     resolve(res);
                 }, (err) => {
@@ -101,7 +101,25 @@ export class EstudiantesProvider {
         };
         console.log(param);
         return new Promise((resolve, reject) => {
-            this.http.post(this.global.apiUrl + '/estudiante', param, this.httpOptions)
+            this.http.post(this.global.apiUrl + '/estudiante', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
+                .subscribe(res => {
+                    resolve(res);
+                }, (err) => {
+                    reject(err);
+                });
+        });
+    }
+
+    saveAgendaProfesor(
+        usuarioId, agendaId,) {
+        const param = {
+            usuarioId,
+            agendaId
+
+        };
+        console.log(param);
+        return new Promise((resolve, reject) => {
+            this.http.post(this.global.apiUrl + '/agendaProfesor', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
                 .subscribe(res => {
                     resolve(res);
                 }, (err) => {
@@ -111,20 +129,20 @@ export class EstudiantesProvider {
     }
 
 
-    postAgenda(fecha, nombre, hora_inicio, hora_fin, ubicacion, etiqueta, descripcion, idProfesor) {
+    postAgenda(fecha,fecha_fin, nombre, hora_inicio, hora_fin, ubicacion, etiqueta, descripcion) {
         let param = {
             fecha: fecha,
+            fecha_fin: fecha_fin,
             nombre: nombre,
             hora_inicio: hora_inicio,
             hora_fin: hora_fin,
             ubicacion: ubicacion,
             etiqueta: etiqueta,
             descripcion: descripcion,
-            idProfesor: idProfesor
         };
         console.log(param);
         return new Promise((resolve, reject) => {
-            this.http.post(this.global.apiUrl + '/agenda', param, this.httpOptions)
+            this.http.post(this.global.apiUrl + '/agenda', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
                 .subscribe(res => {
                     resolve(res);
 
@@ -133,6 +151,25 @@ export class EstudiantesProvider {
                 });
         });
     }
+
+
+    postAgendaProfesor(usuarioId,agendaId,) {
+        let param = {
+            usuarioId: usuarioId,
+            agendaId: agendaId,
+        };
+        console.log(param);
+        return new Promise((resolve, reject) => {
+            this.http.post(this.global.apiUrl + '/agenda', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
+                .subscribe(res => {
+                    resolve(res);
+
+                }, (err) => {
+                    reject(err);
+                });
+        });
+    }
+
 
     postFoto(foto) {
         let param = {
@@ -140,7 +177,7 @@ export class EstudiantesProvider {
         };
         console.log(param);
         return new Promise((resolve, reject) => {
-            this.http.post(this.global.apiUrl + '/estudiante/upload-image', param, this.httpOptions)
+            this.http.post(this.global.apiUrl + '/estudiante/upload-image', param, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})})
                 .subscribe(res => {
                     resolve(res);
                 }, (err) => {

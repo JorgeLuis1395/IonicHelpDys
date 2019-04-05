@@ -9,7 +9,7 @@ export class LoginProvider {
     constructor(public http: HttpClient, public global: Globals) {
     }
 
-    apiUrl = 'http://192.168.1.9:3000';
+    apiUrl = 'http://200.124.230.132:3100';
 
 
     postLogin(nick, password) {

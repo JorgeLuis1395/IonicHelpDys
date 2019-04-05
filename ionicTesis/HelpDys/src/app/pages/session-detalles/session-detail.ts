@@ -21,7 +21,7 @@ export class SessionDetailPage {
         private userProvider: UserData,
         private route: ActivatedRoute
     ) {
-
+    this.consultar();
     }
 
     sessionClick(item: string) {
@@ -62,6 +62,11 @@ export class SessionDetailPage {
             }
         });
     }
-
+    consultar() {
+        this.estudianteProvider.getAgenda().then(data => {
+            this.agenda = Object.values(data)[0];
+            console.log(this.agenda)
+        });
+    }
 }
 

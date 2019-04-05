@@ -15,14 +15,14 @@
 <ion-content>
   <div class="about-header">
     <ion-avatar class="avatar" >
-      <img src="{{usuario.nombre_foto}}">
+      <img src="http://200.124.230.132:3100/public/users/{{usuario?.nombreFoto}}">
     </ion-avatar>
   </div>
   <div padding class="about-info">
     <h4 align="center">Hola Bienvenido a HelpDys</h4>
-    <h5>Nombre: {{usuario.nombre}}</h5>
-    <h5>Apellido: {{usuario.apellido}}  {{usuario.id}}</h5>
-    <h5>Email: {{usuario.email}}</h5>
+    <h5>Nombre: {{usuario?.nombre}}</h5>
+    <h5>Apellido: {{usuario?.apellido}}</h5>
+    <h5>Email: {{usuario?.email}}</h5>
     <ion-input  type="text" style="display: none"  ></ion-input>
   </div>
   <div padding class="about-info">

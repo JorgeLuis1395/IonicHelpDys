@@ -18,7 +18,7 @@ export class DatosUsuarioProvider {
 
     getUsuario() {
         return new Promise(resolve => {
-            this.http.get(this.global.apiUrl + '/usuario/'+this.global.nick, this.httpOptions).subscribe(data => {
+            this.http.get(this.global.apiUrl + '/usuario/'+this.global.nick, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {
@@ -29,7 +29,7 @@ export class DatosUsuarioProvider {
 
     getEstudiante() {
         return new Promise(resolve => {
-            this.http.get(this.global.apiUrl + '/usuario/'+this.global.nick, this.httpOptions).subscribe(data => {
+            this.http.get(this.global.apiUrl + '/usuario/'+this.global.nick, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
                 resolve(data);
                 console.log(data);
             }, err => {

@@ -19,7 +19,7 @@
 
 <ion-content>
   <ion-list >
-    <ion-item-group *ngFor="let agenda1 of agenda">
+    <ion-item-group *ngFor="let agenda1 of aux">
       <ion-item-divider sticky>
         <ion-label>
           {{agenda1.fecha}}
@@ -27,7 +27,7 @@
       </ion-item-divider>
 
       <ion-item-sliding [attr.track]="agenda1.etiqueta | lowercase" >
-        <ion-item button href="app/tabs/(schedule:session/{{agenda1.id}}">
+        <ion-item button (click)="saveIdAgenda(agenda1.id)">
           <ion-label>
             <h3>{{agenda1.nombre}}</h3>
             <p>

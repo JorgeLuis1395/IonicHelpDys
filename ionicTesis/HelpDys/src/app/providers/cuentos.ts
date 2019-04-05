@@ -6,7 +6,7 @@ export class CuentosProvider {
 
     constructor(public http: HttpClient){
     }
-    apiUrl = 'http://localhost:3000';
+    apiUrl = 'http://200.124.230.132:3100';
     getCuentos() {
         return new Promise(resolve => {
             this.http.get(this.apiUrl+'/cuentos').subscribe(data => {

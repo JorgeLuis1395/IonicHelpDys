@@ -6,8 +6,10 @@ import { ScheduleFilterPage } from '../agenda-busqueda/schedule-filter';
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 import {EstudiantesProvider} from "../../providers/estudiantes";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import 'rxjs/Rx';
+import {DatosUsuarioProvider} from "../../providers/datosUsuario";
+import {Globals} from "../../providers/global";
 @Component({
   selector: 'page-schedule',
   templateUrl: 'schedule.html',
@@ -25,7 +27,15 @@ export class SchedulePage {
     groups: any = [];
     confDate: string;
 
+  citas: any;
+  aux: any
+  miArray: any;
+
+
+
   constructor(
+      public _usuario: DatosUsuarioProvider,
+      public global: Globals,
       public estudianteProvider: EstudiantesProvider,
       private toastCtrl: ToastController,
       public router: Router,
@@ -35,7 +45,7 @@ export class SchedulePage {
     public modalCtrl: ModalController,
     public user: UserData,
       public http: HttpClient
-  ) {  this.getAgenda(); }
+  ) { this.getUsuario() }
   ionViewWillEnter() {
     // this.app.setTitle('Schedule');
     this.updateSchedule();
@@ -153,4 +163,23 @@ export class SchedulePage {
     async openNewEvent() {
         this.router.navigateByUrl('/app/tabs/(schedule:new)');
     }
+
+
+  getUsuario() {
+    return new Promise(resolve => {
+      this.http.get(this.global.apiUrl + '/usuario/'+this.global.nick, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
+        resolve(data);
+        this.citas = data;
+        this.aux = Object.values(data)[15]
+        console.log(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
+  saveIdAgenda(id){
+    this.global.idAgenda = id;
+    this.router.navigateByUrl(`app/tabs/(schedule:session/${id}`);
+  }
 }
