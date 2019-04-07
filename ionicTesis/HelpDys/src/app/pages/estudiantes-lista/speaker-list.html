@@ -14,13 +14,14 @@
         <ion-col size="12" size-md="6" *ngFor="let speaker of estudiantes">
           <ion-card class="speaker-card">
             <ion-card-header>
-              <ion-item detail="false" lines="none" [href]="'app/tabs/(speakers:speaker-details/'+ speaker.id">
-                <ion-avatar slot="start">
+              <ion-item detail="false" lines="none" >
+                <ion-avatar class="avatar" >
+                  <img src="http://200.124.230.132:3100/public/users/{{speaker?.nombreFoto}}" height="100" width="100">
                 </ion-avatar>
-                {{speaker.nombre}}  {{speaker.apellido}}
+                {{speaker?.nombre}}  {{speaker?.apellido}}
               </ion-item>
               <ion-item>
-                Año de Educacion Básica :{{speaker.grado}}
+                Año de Educacion Básica :{{speaker?.grado}}
               </ion-item>
               <ion-item>
                 Porcentaje de Dislexia {{speaker.puntuacion}} %
@@ -33,7 +34,7 @@
                   <h3>{{session.nombre}}</h3>
                 </ion-item>
 
-                <ion-item href="app/tabs/(speakers:speaker-details/{{speaker.id}})">
+                <ion-item (click)="guardarNick(speaker.nick)">
                   <h3>Mas Información {{speaker.nombre}}</h3>
                 </ion-item>
               </ion-list>

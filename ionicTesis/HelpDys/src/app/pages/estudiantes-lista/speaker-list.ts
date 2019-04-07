@@ -5,6 +5,8 @@ import { ActionSheetController } from '@ionic/angular';
 import { ConferenceData } from '../../providers/conference-data';
 import {EstudiantesProvider} from "../../providers/estudiantes";
 import {DateFormatter} from "@angular/common/src/pipes/deprecated/intl";
+import {Globals} from "../../providers/global";
+import {DatosUsuarioProvider} from "../../providers/datosUsuario";
 
 @Component({
     selector: 'page-speaker-list',
@@ -19,7 +21,8 @@ export class SpeakerListPage {
         public actionSheetCtrl: ActionSheetController,
         public confData: ConferenceData,
         public router: Router,
-        public estudianteProvider: EstudiantesProvider,
+        public estudianteProvider: DatosUsuarioProvider,
+        public global: Globals
     ) {this.getEstudiante()}
 
     ionViewDidEnter() {
@@ -73,17 +76,17 @@ export class SpeakerListPage {
             header: 'Contacto ' + estudiantes.nombre,
             buttons: [
                 {
-                    text: `Email ( ${estudiantes.email_representante} )`,
+                    text: `Email ( ${estudiantes.email} )`,
                     icon: mode !== 'ios' ? 'mail' : null,
                     handler: () => {
-                        window.open('mailto:' + estudiantes.email_representante);
+                        window.open('mailto:' + estudiantes.email);
                     }
                 },
                 {
-                    text: `Telefono ( ${estudiantes.telefono_representante} )`,
+                    text: `Telefono ( ${estudiantes.telefono} )`,
                     icon: mode !== 'ios' ? 'call' : null,
                     handler: () => {
-                        window.open('tel:' + estudiantes.telefono_representante);
+                        window.open('tel:' + estudiantes.telefono);
                     }
                 }
             ]
@@ -92,13 +95,19 @@ export class SpeakerListPage {
         await actionSheet.present();
     }
     getEstudiante() {
-        this.estudianteProvider.getEstudiantes()
+        this.estudianteProvider.getUsuario()
             .then(data => {
-                this.estudiantes = data;
-                console.log(this.estudiantes);
+                this.estudiantes = Object.values(data)[14];
+
             });
     }
     async openNewEvent() {
         this.router.navigateByUrl('/app/tabs/(speakers:estudiante)');
+    }
+
+    guardarNick(nick){
+        this.global.nombreEstudiante = nick;
+        this.router.navigateByUrl(`app/tabs/(speakers:speaker-details/${nick})`);
+
     }
 }

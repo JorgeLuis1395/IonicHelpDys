@@ -13,6 +13,7 @@ import {EstudiantesProvider} from "../../providers/estudiantes";
 export class SpeakerDetailPage {
     estudiantes: any;
     speaker:any;
+    calificaciones: any;
     constructor(
         private dataProvider: ConferenceData,
         private router: Router,
@@ -39,10 +40,12 @@ export class SpeakerDetailPage {
         this.router.navigateByUrl(`app/tabs/(schedule:session/${session.id})`);
     }
     getEstudiante() {
-        this.estudianteProvider.getEstudiantes()
+        this.estudianteProvider.getEstudianteDetalle()
             .then(data => {
                 this.estudiantes = data;
                 console.log(this.estudiantes);
+                this.calificaciones = Object.values(data)[14];
+                console.log(this.calificaciones)
             });
     }
 

@@ -82,6 +82,7 @@ export class LoginPage implements OnInit{
     sendLoginEst() {
         this._login.postLoginEst(this.nick, this.password).then((result) => {
             this.global.nick = this.nick;
+            this.global.tokenUsuario = Object.values(result)[0];
             this.router.navigateByUrl('est/tabs/(inicio:inicio)');
 
         }, (err) => {

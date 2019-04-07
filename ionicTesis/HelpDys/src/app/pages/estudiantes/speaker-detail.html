@@ -3,24 +3,38 @@
     <ion-buttons slot="start">
       <ion-back-button text="Estudiantes"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{estudiantes?.nombre}}</ion-title>
+    <ion-title>{{estudiantes?.nombre}} {{estudiantes?.apellido}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="speaker-detail">
-  <div text-center *ngIf="estudiantes">
-    <br>
+  <ion-item detail="false" lines="none">
+    <ion-avatar class="avatar" >
+      <img src="http://200.124.230.132:3100/public/users/{{estudiantes?.nombreFoto}}">
+    </ion-avatar>
+    {{estudiantes?.nombre}}  {{estudiantes?.apellido}}
+  </ion-item>
+  <ion-item>
+    Email :{{estudiantes?.email}}
+  </ion-item>
+  <ion-item>
+    Cedula {{estudiantes?.cedula}}
+  </ion-item>
+  <ion-item>
+    Fecha Nacimiento {{estudiantes?.fecha_nacimiento}}
+  </ion-item>
+  <ion-item>
+    Telefono {{estudiantes?.telefono}}
+  </ion-item>
+  <ion-item>
+    Año de Educación Básica {{estudiantes?.grado}}
+  </ion-item>
+  <ion-item>
+    Unidad Educativa {{estudiantes?.unidad_educativa}}
+  </ion-item>
+  <ion-item>
+    Cedula {{estudiantes?.cedula}}
+  </ion-item>
+  <br>
 
-    <ion-button fill="clear" size="small" color="twitter">
-      <ion-icon name="logo-twitter" slot="icon-only"></ion-icon>
-    </ion-button>
-    <ion-button fill="clear" size="small" color="github">
-      <ion-icon name="logo-github" slot="icon-only"></ion-icon>
-    </ion-button>
-    <ion-button fill="clear" size="small" color="instagram">
-      <ion-icon name="logo-instagram" slot="icon-only"></ion-icon>
-    </ion-button>
-  </div>
-
-  <p>{{estudiantes?.apellido}}</p>
 </ion-content>

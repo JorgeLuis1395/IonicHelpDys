@@ -1,69 +1,106 @@
 <ion-content>
     <ion-infinite-scroll>
-        <h3 align="center">Registro de Profesor</h3>
-        <form >
+        <div padding>
+            <h3 align="center">Registro de Profesor</h3>
             <div class="row header">
-                <div class="col"><div class = "col header text-center">
-                    <p>
-                        <img [src]="base64Image"></p></div>
-                </div>
-                <button ion-button icon-only (click)="takePhoto()"> <ion-icon name="camera"></ion-icon></button>
+                <h6 *ngIf="images.length == 0" text-center>Seleccione una Imagen!</h6>
+
+                <ion-list>
+                    <ion-item *ngFor="let img of images; index as pos" text-wrap>
+                        <ion-thumbnail slot="start">
+                            <ion-img [src]="img.path"></ion-img>
+                        </ion-thumbnail>
+                        <ion-label>
+                            {{ img.name }}
+                        </ion-label>
+                        <ion-button slot="end" fill="clear" (click)="startUpload(img)">
+                            <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
+                        </ion-button>
+                        <ion-button slot="end" fill="clear" (click)="deleteImage(img, pos)">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-button>
+                    </ion-item>
+                </ion-list>
+
+                <ion-footer>
+                    <ion-toolbar color="primary">
+                        <ion-button fill="clear" expand="full" color="light" (click)="selectImage()">
+                            <ion-icon slot="start" name="camera"></ion-icon>
+                            Select Image
+                        </ion-button>
+                    </ion-toolbar>
+                </ion-footer>
             </div>
             <ion-item>
                 <ion-icon name="person" item-left></ion-icon>
-                <ion-input type="text"
-                           minlength="3"
-                           placeholder="Nombre" [(ngModel)]="nombre" name="nombre"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-icon name="person" item-left></ion-icon>
-                <ion-input type="text"
-                           minlength="3"
-                           placeholder="Apellido" [(ngModel)]="apellido" name="apellido"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-icon name="mail"></ion-icon>
-                <ion-input type="email"
-                           minlength="9"
-                           placeholder="Email"[(ngModel)]="email" name="email"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-icon name="call"></ion-icon>
-                <ion-input type="text"
-                           minlength="7"
-                           maxlength="10" placeholder="Telefono" [(ngModel)]="telefono" name="telefono"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-icon name="calendar"></ion-icon>
-                <ion-input placeholder="Fecha Nacimiento"></ion-input>
-                <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fecha_nacimiento" name="fecha_nacimiento"></ion-datetime>
+                <ion-input type="text" [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-icon name="text"></ion-icon>
-                <ion-input type="text"
-                           minlength="7"
-                           maxlength="10" placeholder="AMIE" [(ngModel)]="amie" name="amie"></ion-input>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input type="text" [(ngModel)]="apellido" placeholder="Apellido"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-icon name="text"></ion-icon>
-                <ion-input type="text"
-                           minlength="3"
-                           placeholder="Unidad Educativa" [(ngModel)]="unidad_educativa" name="unidad_educativa"></ion-input>
+                <ion-icon name="mail"></ion-icon>
+                <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
             </ion-item>
+            <ion-item>
+                <ion-icon name="call"></ion-icon>
+                <ion-input type="tel" [(ngModel)]="telefono" placeholder="Telefono"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="person"></ion-icon>
+                <ion-input type="number" [(ngModel)]="cedula" placeholder="Cédula"></ion-input>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-icon name="person"></ion-icon>
+                <ion-input type="text" [(ngModel)]="amie" placeholder="AMIE Institución">
+                </ion-input>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-icon name="calendar"></ion-icon>
+                <ion-input placeholder="Fecha Nacimiento"></ion-input>
+                <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fecha_nacimiento"></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="logo-reddit"></ion-icon>
+                <ion-input type="text" [(ngModel)]="unidad_educativa" placeholder="Unidad Educativa"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Año de Educacion Básica</ion-label>
+                <ion-select [(ngModel)]="grado" class="select()">
+                    <ion-select-option value="1">1</ion-select-option>
+                    <ion-select-option value="2">2</ion-select-option>
+                    <ion-select-option value="3">3</ion-select-option>
+                    <ion-select-option value="4">4</ion-select-option>
+                    <ion-select-option value="5">5</ion-select-option>
+                    <ion-select-option value="6">6</ion-select-option>
+                    <ion-select-option value="7">7</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input type="text" [(ngModel)]="nick" placeholder="Nick"></ion-input>
+            </ion-item>
+
             <ion-item>
                 <ion-icon name="key" item-left></ion-icon>
-                <ion-input type="password"
-                           minlength="3"
-                           maxlength="16" placeholder="Contraseña" [(ngModel)]="contrasena" name="contrasena"></ion-input>
+                <ion-input type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
             </ion-item>
-            <ion-item>
-                <ion-icon name="key" item-left></ion-icon>
-                <ion-input type="password" required="" placeholder="Contraseña" [(ngModel)]="contrasena" name="contrasena"></ion-input>
-            </ion-item>
+
             <div padding>
-                <ion-button color="dark" size="large"  type="submit" expand="block"  (click)="saveUser()" >Registrar</ion-button>
+                <ion-button color="dark" size="large" type="submit" expand="block" (click)="guardar()">
+                    Registrar
+                </ion-button>
             </div>
-        </form>
+        </div>
     </ion-infinite-scroll>
 </ion-content>
+

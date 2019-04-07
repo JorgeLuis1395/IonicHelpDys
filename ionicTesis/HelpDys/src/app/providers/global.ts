@@ -7,4 +7,5 @@ export class Globals {
     tokenUsuario: string;
     idProfesor: string;
     idAgenda: number;
+    nombreEstudiante: string;
 }
