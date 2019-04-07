@@ -1,9 +1,63 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>calificaciones</ion-title>
+    <ion-title>Calificaciones </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="speaker-detail">
+  <ion-item detail="false" lines="none">
+    <ion-avatar class="avatar" >
+      <img src="http://200.124.230.132:3100/public/users/{{estudiantes?.nombreFoto}}">
+    </ion-avatar>
+    {{estudiantes?.nombre}}  {{estudiantes?.apellido}}
+  </ion-item>
+  <ion-item>
+    Email :{{estudiantes?.email}}
+  </ion-item>
+  <ion-item>
+    Cedula {{estudiantes?.cedula}}
+  </ion-item>
+  <ion-item>
+    Telefono {{estudiantes?.telefono}}
+  </ion-item>
+  <ion-item>
+    Año de Educación Básica {{estudiantes?.grado}}
+  </ion-item>
+  <br>
+
+  <ion-item>
+    Calificaciones
+  </ion-item>
+
+  <ion-row style="height: 30px" >
+    <ion-col col-3>
+      Tipo
+    </ion-col>
+    <ion-col col-3>
+      Detalle
+    </ion-col>
+    <ion-col col-3>
+      Materia
+    </ion-col>
+    <ion-col col-3>
+      Calificación
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngFor="let calificacion of calificaciones " style= " height: 50px; border: #0e59be">
+    <ion-col col-3 style="border: #0e59be">
+      {{calificacion.tipo}}
+    </ion-col>
+    <ion-col col-3 style="border: #0e59be">
+      {{calificacion.detalle}}
+    </ion-col>
+    <ion-col col-3 style="border: #0e59be">
+      {{calificacion.materia}}
+    </ion-col>
+    <ion-col col-3 style="border: #0e59be">
+      {{calificacion.calificacion}}
+    </ion-col>
+  </ion-row>
 
 </ion-content>
+

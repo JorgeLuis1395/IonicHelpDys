@@ -4,6 +4,7 @@ import { SpeakerListPage } from '../estudiantes-lista/speaker-list';
 import {InfoEstudiantePage} from "../info-estudiante/info-estudiante.page";
 import {TabsEstudiantePage} from "./tabs-estudiante.page";
 import {DiagnosticoEstudiantePage} from "../diagnostico-estudiante/diagnostico-estudiante.page";
+import {CalificacionesPage} from "../calificaciones/calificaciones.page";
 
 
 const routes: Routes = [
@@ -25,7 +26,7 @@ const routes: Routes = [
       // tab two
       {
         path: 'calificaciones',
-        component: SpeakerListPage,
+        component: CalificacionesPage,
         outlet: 'calificaciones'
       }
     ]

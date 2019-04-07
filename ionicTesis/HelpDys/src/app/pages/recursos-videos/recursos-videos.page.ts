@@ -18,4 +18,6 @@ export class RecursosVideosPage implements OnInit {
   ngOnInit() {
   }
 
+
+
 }

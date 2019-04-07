@@ -11,6 +11,8 @@ import {SpeakerDetailModule} from "../estudiantes/speaker-detail.module";
 import {TabsPageRoutingEstModule} from "./tabs-page-routing-est.module";
 import {InfoEstudiantePageModule} from "../info-estudiante/info-estudiante.module";
 import {DiagnosticoEstudiantePageModule} from "../diagnostico-estudiante/diagnostico-estudiante.module";
+import {CalificacionesPage} from "../calificaciones/calificaciones.page";
+import {CalificacionesPageModule} from "../calificaciones/calificaciones.module";
 
 @NgModule({
   imports: [
@@ -22,6 +24,7 @@ import {DiagnosticoEstudiantePageModule} from "../diagnostico-estudiante/diagnos
       SessionDetailModule,
       SpeakerDetailModule,
       SpeakerListModule,
+      CalificacionesPageModule,
       TabsPageRoutingEstModule,
   ],
   declarations: [TabsEstudiantePage]

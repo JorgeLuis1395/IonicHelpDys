@@ -9,6 +9,8 @@ import {AhorcadoPageModule} from "../ahorcado/ahorcado.module";
 import {MemoriaPageModule} from "../memoria/memoria.module";
 import {RecursosJuegosPageModule} from "../recursos-juegos/recursos-juegos.module";
 import {Memoria1PageModule} from "../memoria1/memoria1.module";
+import {TabsContenidoPage} from "../tabs-contenido/tabs-contenido.page";
+import {TabsContenidoPageModule} from "../tabs-contenido/tabs-contenido.module";
 
 @NgModule({
   imports: [

@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recursos-cuentos</ion-title>
+    <ion-title>Cuentos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <div class="col-sm-12">
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"  *ngFor=" let nombre of aux">
+            <div class="card" (click)="irCuento(nombre.id)" style="height: 275px; width: 250px">
+              <div align="center" height="200" width="200">
+                <img [src]="nombre?.imagen1" height="200px" width="150px"
+                            alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">{{nombre?.cuento}}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

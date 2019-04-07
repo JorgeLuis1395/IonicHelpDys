@@ -8,4 +8,5 @@ export class Globals {
     idProfesor: string;
     idAgenda: number;
     nombreEstudiante: string;
+    idCuento: number;
 }

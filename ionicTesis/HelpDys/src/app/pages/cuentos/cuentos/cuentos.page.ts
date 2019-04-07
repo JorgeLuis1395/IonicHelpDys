@@ -15,7 +15,7 @@ export class CuentosPage implements OnInit {
   }
 
   cargarCuentos(){
-    this._cuentosService.getCuentos()
+    this._cuentosService.getCuentosId()
         .then(data => {
           this.cuentos = data;
           console.log(this.cuentos);

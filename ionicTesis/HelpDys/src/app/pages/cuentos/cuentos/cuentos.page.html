@@ -1,79 +1,99 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>cuentos</ion-title>
+        <ion-title>Cuento  {{cuentos?.cuento}} </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
     <ion-slides>
 
-        <ion-slide *ngFor="let recurso of cuentos">
+        <ion-slide>
             <div>
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
 
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen1}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto1}}
-            </ion-card-content>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen1}}"></ion-img>
+                </ion-card-content>
+
+                <audio src="{{cuentos?.voz1}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto1}}
+                </ion-card-content>
             </div>
         </ion-slide>
 
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen2}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto2}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen2}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz2}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto2}}
+                </ion-card-content>
+            </div>
         </ion-slide>
 
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen3}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto3}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen3}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz3}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto3}}
+                </ion-card-content>
+            </div>
         </ion-slide>
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen4}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto4}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen4}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz4}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto4}}
+                </ion-card-content>
+            </div>
         </ion-slide>
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen5}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto5}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen5}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz5}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto5}}
+                </ion-card-content>
+            </div>
         </ion-slide>
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{cuento.imagen6}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto6}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen6}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz6}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto6}}
+                </ion-card-content>
+            </div>
         </ion-slide>
-        <ion-slide *ngFor="let recurso of cuentos">
-            <ion-card-header>{{recurso.cuento}}</ion-card-header>
-            <ion-card-content>
-                <ion-img src="{{recurso.imagen7}}"></ion-img>
-            </ion-card-content>
-            <ion-card-content>
-                {{recurso.texto7}}
-            </ion-card-content>
+        <ion-slide>
+            <div>
+                <ion-card-header>{{cuentos?.cuento}}</ion-card-header>
+                <ion-card-content>
+                    <ion-img src="{{cuentos?.imagen7}}"></ion-img>
+                </ion-card-content>
+                <audio src="{{cuentos?.voz7}}" controls></audio>
+                <ion-card-content align="justify">
+                    {{cuentos?.texto7}}
+                </ion-card-content>
+            </div>
         </ion-slide>
     </ion-slides>
 </ion-content>

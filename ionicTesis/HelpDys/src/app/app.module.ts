@@ -14,7 +14,7 @@ import {CuentosProvider} from './providers/cuentos';
 import {LoginProvider} from "./providers/login";
 import {DatosUsuarioProvider} from "./providers/datosUsuario";
 import {Globals} from "./providers/global";
-
+import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioProviderFactory } from 'ionic-audio';
 import {File} from '@ionic-native/File/ngx';
 import {WebView} from '@ionic-native/ionic-webview/ngx';
 import {FilePath} from '@ionic-native/file-path/ngx';
@@ -31,6 +31,8 @@ import {Camera} from '@ionic-native/camera/ngx';
         ServiceWorkerModule.register('ngsw-worker.js', {
             enabled: environment.production
         }),
+        IonicAudioModule.forRoot(defaultAudioProviderFactory),
+
     ],
     declarations: [AppComponent],
     providers: [SplashScreen,

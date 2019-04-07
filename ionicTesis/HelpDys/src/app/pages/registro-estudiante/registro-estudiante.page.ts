@@ -273,7 +273,7 @@ export class RegistroEstudiantePage implements OnInit {
             this.telefono,
             this.unidad_educativa,
             this.nombreFoto,
-            this.rol).then((result) => {
+            'Est').then((result) => {
             result
             console.log(result)
             console.log(Object.values(result)[1][0]);

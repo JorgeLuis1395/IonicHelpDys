@@ -13,10 +13,10 @@
                         <ion-label>
                             {{ img.name }}
                         </ion-label>
-                        <ion-button slot="end" fill="clear" (click)="startUpload(img)">
+                        <ion-button  (click)="startUpload(img)">
                             <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
                         </ion-button>
-                        <ion-button slot="end" fill="clear" (click)="deleteImage(img, pos)">
+                        <ion-button  (click)="deleteImage(img, pos)">
                             <ion-icon slot="icon-only" name="trash"></ion-icon>
                         </ion-button>
                     </ion-item>
