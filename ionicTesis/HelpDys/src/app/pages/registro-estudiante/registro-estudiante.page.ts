@@ -280,6 +280,7 @@ export class RegistroEstudiantePage implements OnInit {
             this.aux = Object.values(result)[1][0];
             this.idEstudiante = parseInt(Object.values(this.aux)[0].toString());
             this.profesorEstudiante();
+            this.sendEmail();
             alert('Estudiante Registrado con Éxito')
             this.router.navigateByUrl('/app/tabs/(speakers:speakers)');
 
@@ -317,6 +318,27 @@ export class RegistroEstudiantePage implements OnInit {
         }, (err) => {
             // Handle error
         });
+    }
+
+    sendEmail(){
+        this.http.post('http://200.124.230.132:3100/notificaciones/email' ,
+            {
+                to: this.email,
+                subject: 'HelDys Registro Usuario',
+                text: `No responder al siguiente correo,
+                Helpdys te da la bienvenida a usar la aplicación tu codigo de estudiante es el siguiente ${this.codigo_estudiante} 
+                no borres este código te servirá en un futuro`,
+
+            }, {headers: new HttpHeaders({'Authorization': 'Bearer ' + this.global.tokenUsuario})}).subscribe(data => {
+            alert('Notificacion enviada al correo del estudiante')
+
+            const rutaHomeUsuario = [
+                '/login',
+            ];
+            this.router.navigate(rutaHomeUsuario);
+            this.ngOnInit();
+        });
+
     }
 
 

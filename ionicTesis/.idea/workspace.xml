@@ -2,85 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a441006a-8a4e-4b9d-9587-d06975a58b0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/Selecciona.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/bambi7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita6_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/caperusita7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/carrusel.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/leon.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/librodesel7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/los tres cerditos y el lobo 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/lostres cerditos7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/pinocho7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/reyleon7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/risitos7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/selecciona1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelpDys/src/assets/audios/ubica.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-juegos/recursos-juegos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-juegos/recursos-juegos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-videos/recursos-videos.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-page-routing-est.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-page-routing-est.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-juegos/tabs-juegos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-juegos/tabs-juegos.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/providers/cuentos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/providers/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/providers/global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelpDys/src/app/pages/support/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelpDys/src/app/pages/support/support.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,8 +23,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1372">
-              <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
+            <state relative-caret-position="268">
+              <caret line="282" column="29" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#2;n#div#1;n#ion-content#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#ion-content#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="98" column="103" selection-start-line="98" selection-start-column="103" selection-end-line="98" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="305" selection-start-line="305" selection-end-line="305" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -106,31 +67,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.html">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/support/support.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="145">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="136">
+              <caret line="8" column="66" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="29" column="8" selection-start-line="15" selection-start-column="2" selection-end-line="29" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#ion-input#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/recursos-juegos/recursos-juegos.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-contenido/tabs-contenido.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/diagnostico-estudiante/diagnostico-estudiante.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/diagnostico-estudiante/diagnostico-estudiante.page.html" />
@@ -175,7 +144,6 @@
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/providers/login.ts" />
         <option value="$PROJECT_DIR$/HelpDys/config.xml" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/new-event/new-event.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/agenda/schedule.html" />
@@ -188,8 +156,6 @@
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes-lista/speaker-list.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registros/registros.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes-lista/speaker-list.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes/speaker-detail.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes/speaker-detail.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/info-estudiante/info-estudiante.page.html" />
@@ -211,14 +177,18 @@
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/tabs-estudiante/tabs-estudiante.page.html" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/calificaciones/calificaciones.page.html" />
-        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts" />
         <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/support/support.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts" />
+        <option value="$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="width" value="979" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -227,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,7 +238,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="registro-estudiante" type="462c0819:PsiDirectoryNode" />
+              <item name="recursos-imagenes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ionicTesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ionicTesis" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpDys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ionicTesis" type="b2602c69:ProjectViewProjectNode" />
@@ -288,7 +268,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,12 +351,14 @@
       <workItem from="1554589932618" duration="8505000" />
       <workItem from="1554599436382" duration="2541000" />
       <workItem from="1554604212508" duration="11815000" />
-      <workItem from="1554644127228" duration="17329000" />
+      <workItem from="1554644127228" duration="17364000" />
+      <workItem from="1554732711417" duration="424000" />
+      <workItem from="1554756081148" duration="4288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267992000" />
+    <option name="totallyTimeSpent" value="272739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,7 +373,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23463318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23463318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Job Explorer" order="3" />
@@ -409,7 +390,7 @@
       <window_info anchor="bottom" id="Console" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.3654391" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4990086" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4990086" visible="true" weight="0.3654391" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.3268734" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -446,36 +427,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes-lista/speaker-list.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registros/registros.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/estudiantes-lista/speaker-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="272" column="45" selection-start-line="272" selection-start-column="45" selection-end-line="272" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,13 +458,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="98" column="101" selection-start-line="98" selection-start-column="101" selection-end-line="98" selection-end-column="101" />
         </state>
       </provider>
     </entry>
@@ -564,16 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="18" column="17" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#ion-input#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/providers/global.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -604,9 +542,6 @@
           <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -695,23 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#ion-content#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#ion-content#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#ion-content#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#ion-content#0;n#!!top" />
-            <element signature="n#div#0;n#div#3;n#ion-content#0;n#!!top" />
-            <element signature="n#div#1;n#div#3;n#ion-content#0;n#!!top" />
-            <element signature="n#div#2;n#div#3;n#ion-content#0;n#!!top" />
-            <element signature="n#div#3;n#div#3;n#ion-content#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,26 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1372">
-          <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/cuentos/cuentos/cuentos.page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -852,10 +750,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-cuentos/recursos-cuentos.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/informacion/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="29" column="8" selection-start-line="15" selection-start-column="2" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#ion-input#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/support/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="98" column="103" selection-start-line="98" selection-start-column="103" selection-end-line="98" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-profesor/registro-profesor.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="305" selection-start-line="305" selection-end-line="305" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/registro-estudiante/registro-estudiante.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="282" column="29" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpDys/src/app/pages/recursos-imagenes/recursos-imagenes.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#ion-content#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#ion-content#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -277,7 +277,7 @@ export class RegistroProfesorPage implements OnInit {
             alert('Registro de usuario correcto')
 
             const rutaHomeUsuario = [
-                '/*',
+                '/login',
             ];
             this.router.navigate(rutaHomeUsuario);
             this.ngOnInit();
@@ -303,6 +303,7 @@ export class RegistroProfesorPage implements OnInit {
             // Handle error
         });
     }
+
 
 
 }

@@ -13,10 +13,10 @@
                         <ion-label>
                             {{ img.name }}
                         </ion-label>
-                        <ion-button slot="end" fill="clear" (click)="startUpload(img)">
+                        <ion-button  fill="clear" (click)="startUpload(img)">
                             <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
                         </ion-button>
-                        <ion-button slot="end" fill="clear" (click)="deleteImage(img, pos)">
+                        <ion-button  fill="clear" (click)="deleteImage(img, pos)">
                             <ion-icon slot="icon-only" name="trash"></ion-icon>
                         </ion-button>
                     </ion-item>
@@ -96,7 +96,7 @@
             </ion-item>
 
             <div padding>
-                <ion-button color="dark" size="large" type="submit" expand="block" (click)="guardar()">
+                <ion-button color="dark" size="large" type="submit" expand="block" (click)="guardar()" >
                     Registrar
                 </ion-button>
             </div>
