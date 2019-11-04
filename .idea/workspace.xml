@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a9708f-c8da-4bcf-b99f-e63b10cf3517" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/informacion/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/informacion/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/cuentos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/cuentos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/estudiantes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/estudiantes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/global.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicTesis/HelpDys/src/app/providers/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/assets/recursos/ahorcado/NUEVE.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/assets/recursos/ahorcado/SEIS.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/assets/recursos/ahorcado/SIETE.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicTesis/HelpDys/src/assets/recursos/ahorcado/UNO.PNG" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state>
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -39,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
+            <state>
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -56,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
-              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -76,68 +65,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\carri\Documents\GitHub\IonicHelpDys" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\carri\Documents\GitHub\IonicHelpDys" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="HelpDys" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\carri\Documents\GitHub\IonicHelpDys" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="HelpDys" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="HelpDys" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="HelpDys" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="IonicHelpDys" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="ionicTesis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="HelpDys" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agenda" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ionicTesis" />
+    <property name="excluded.www.directory" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FinalTesis" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -174,22 +130,24 @@
       <workItem from="1554079598378" duration="4000" />
       <workItem from="1554429079225" duration="54000" />
       <workItem from="1554431116674" duration="116000" />
+      <workItem from="1561206963783" duration="490000" />
+      <workItem from="1561207622518" duration="42000" />
+      <workItem from="1562188288697" duration="926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="969000" />
+    <option name="totallyTimeSpent" value="2427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="DB Browser" order="3" />
       <window_info id="Job Explorer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -200,12 +158,15 @@
       <window_info anchor="bottom" id="Console" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +175,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state>
           <folding>
             <element signature="e#0#72#0" expanded="true" />
           </folding>
@@ -223,7 +184,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
+        <state>
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -236,7 +197,7 @@
     <entry file="file://$PROJECT_DIR$/ionicTesis/HelpDys/src/app/pages/agenda/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
